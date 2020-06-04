@@ -1,0 +1,21 @@
+
+function return_recurrent_html_code() {
+    return "<h1>Treating Recurrent Laryngeal and Hypopharyngeal Cancers</h1><p>Cancer is called <a href=\"https://www.cancer.org/treatment/survivorship-during-and-after-treatment/understanding-recurrence.html\">recurrent</a> when it come backs after treatment. Recurrence can be local (in or near the same place it started) or distant (spread to other parts of the body, like the lungs or bone). Treatment options for patients whose <a href=\"https://www.cancer.org/cancer/laryngeal-and-hypopharyngeal-cancer/about/what-is-laryngealand-hypopharyngeal.html\">laryngeal or hypopharyngeal cancers</a> come back after treatment depend mainly on what the first treatment was and where the cancer recurs.</p> \n" +
+        "   <p>Because these cancer recurrences are hard to treat, patients may want to think about taking part in <a href=\"https://www.cancer.org/treatment/treatments-and-side-effects/clinical-trials.html\">clinical trials</a> of newer treatments.</p> \n" +
+        "   <h2>Local recurrence</h2> \n" +
+        "   <p>Local recurrences in people who have already had limited <a href=\"https://www.cancer.org/cancer/laryngeal-and-hypopharyngeal-cancer/treating/surgery.html\">surgery</a> such as partial laryngectomy can often be treated with more extensive surgery (such as total laryngectomy). This may be followed by <a href=\"https://www.cancer.org/cancer/laryngeal-and-hypopharyngeal-cancer/treating/radiation.html\">radiation therapy</a> or chemoradiation (radiation and chemo are given at the same time).</p> \n" +
+        "   <p>Local recurrence may also be treated with <a href=\"https://www.cancer.org/cancer/laryngeal-and-hypopharyngeal-cancer/treating/chemotherapy.html\">chemotherapy</a>. Chemo may be given along with <a href=\"https://www.cancer.org/cancer/laryngeal-and-hypopharyngeal-cancer/treating/targeted-therapy.html\">cetuximab</a>. Or, chemoradiation may be used.</p> \n" +
+        "   <p>If cancer comes back locally after radiation therapy, the usual treatment is total laryngectomy, but more radiation therapy is sometimes used. </p> \n" +
+        "   <p>If surgery can't be done, chemo or chemoradiation can be used to help control the cancer and ease any problems it might be causing. (This is called <a href=\"https://www.cancer.org/treatment/treatments-and-side-effects/palliative-care.html\">palliative or suppportive care</a>.)</p>  \n" +
+        "   <h2>Distant recurrence</h2> \n" +
+        "   <p>Distant recurrences that have not responded to radiation therapy and surgery are treated with <a href=\"https://www.cancer.org/cancer/laryngeal-and-hypopharyngeal-cancer/treating/chemotherapy.html\">chemotherapy</a> and/or <a href=\"https://www.cancer.org/cancer/laryngeal-and-hypopharyngeal-cancer/treating/targeted-therapy.html\">targeted therapy.</a> Chemoradiation may also be used, if a person can tolerate it. </p> \n" +
+        "   <p>If there are only a few tumors, <a href=\"https://www.cancer.org/cancer/laryngeal-and-hypopharyngeal-cancer/treating/surgery.html\">surgery</a> may be done. <a href=\"https://www.cancer.org/cancer/laryngeal-and-hypopharyngeal-cancer/treating/radiation.html\">Radiation</a> or chemo are also options.</p> \n" +
+        "   <p>Chemo or chemoradiation can be used to help control the cancer and ease any problems it might be causing. (This is called <a href=\"https://www.cancer.org/treatment/treatments-and-side-effects/palliative-care.html\">palliative or suppportive care</a>.)</p>  " +
+        // "   <h2>Written by</h2> \n" +
+        // " <div class='logo-info rich-content'><p><a href='https://www.cancer.org/cancer/acs-medical-content-and-news-staff.html'>The American Cancer Society medical and editorial content team<br /> \n" +
+        // "</a>Our team is made up of doctors and master's-prepared nurses with deep knowledge of cancer care as well as journalists, editors, and translators with extensive experience in medical writing.</p> \n" +
+        // "</div> \n" +
+        // "</div>";
+        "<p>\n Source: <a href=\"https://www.cancer.org/cancer/acs-medical-content-and-news-staff.html\">The American Cancer Society medical and editorial content team.</a> November 27, 2017 </p>";
+
+}

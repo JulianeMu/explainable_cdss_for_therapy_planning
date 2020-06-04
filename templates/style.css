@@ -1,0 +1,389 @@
+
+/*-------------------------------------------initial divs-------------------------------------------------*/
+
+:root {
+    --element-background-color: white;
+    /*--element-background-color: #444168;*/
+    --main-background-color: lightsteelblue;
+    --main-font-color: #444168;
+    --time-line-outcome-height: 200px;
+    --plot-width: 960px;
+    --padding: 5px;
+    --min_height: 500px;
+    --main-foreground-color:#a4cfd6;
+    --main-margin: 10px;
+    --navbar-font-color: white;
+    --navbar-highlight-font-color: #7da7ca;
+    --main-font-weight: 300;
+    --highlight-font-weight: 700;
+    --legend_height: 40px;
+}
+
+
+body {
+    background-color: var(--main-background-color);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: var(--main-font-weight);
+    /*overflow-y: hidden;*/
+}
+
+.whole_view {
+    fill: var(--main-font-color);
+    position: relative;
+    width: calc(100% - 2px);
+    /*height: calc(100vh - 3 * 10px); !* 55vh for pictures *!*/
+    height: calc(100vh - 3 * 10px); /* 55vh for pictures */
+    margin: 10px 10px 0px 10px;
+    background-color: var(--main-background-color);
+}
+.structured_exploration {
+    margin-left: calc(2 * var(--padding));
+    margin-top: 20px;
+    width: calc(100% - 4* var(--padding));
+    /*height: 60vh;*/
+    height: 60vh;
+    border: none;
+}
+
+.heading {
+    position: relative;
+    width: calc(100% - 20px); /* 100% - (margin.left and margin.right) */
+    height: calc(40px - 20px); /* 40px - (margin.left and margin.right) */
+    float: top;
+    margin-bottom: 10px;
+    fill: var(--main-font-color);
+    font-weight: bold;
+}
+
+.heading_text{
+    position: relative;
+    width: 300px; /* 100% - (margin.left and margin.right) */
+    height: 100%; /* 40px - (margin.left and margin.right) */
+    float: left;
+    margin-bottom: 10px;
+}
+.patient_name{
+    position: relative;
+    width: 300px; /* 100% - (margin.left and margin.right) */
+    height: 100%; /* 40px - (margin.left and margin.right) */
+    float: right;
+    margin-bottom: 10px;
+}
+.sap_id{
+    position: relative;
+    width: 200px; /* 100% - (margin.left and margin.right) */
+    height: 100%; /* 40px - (margin.left and margin.right) */
+    float: right;
+    margin-bottom: 10px;
+    padding-left: var(--padding);
+}
+
+
+.plot {
+    display: inline-block;
+    width: calc(4/6 * 100% - 2 * var(--padding)); /*3/5*/
+    /*width: calc(2/7 * 100% - 2 * var(--padding)); !*3/5*!*/
+    /*height: calc(100vh - 40px - var(--time-line-outcome-height) - 30px);*/
+    height: calc(100% - 10px - 30px);
+    float: top;
+    position: relative;
+    background-color: var(--main-background-color);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.guidelines_outcome {
+    display: inline-block;
+    width: calc(2/6 * 100% - 2* var(--padding) - 10px);
+    height: calc(100% - 10px - 30px);
+    float: top;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.guidelines_all {
+    display: inline-block;
+    width: calc(100% - 2* var(--padding) - 0px);
+    height: calc(100% - var(--time-line-outcome-height) - 30px);
+    float: top;
+    position: relative;
+    background-color: var(--element-background-color);
+    margin-bottom: 10px;
+    padding: var(--padding) var(--padding) var(--padding) var(--padding);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.guidelines {
+    display: inline-block;
+    width: calc(100% - 4* var(--padding));
+    height: calc(100% - 60px - 90px);
+    background-color: var(--element-background-color);
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: var(--padding) var(--padding) var(--padding) var(--padding);
+    overflow-y: auto;
+    overflow-x: hidden;
+    fill: var(--main-font-color);
+}
+
+
+.filter_methods {
+    display: inline-block;
+    width: calc(100% - 2* var(--padding) - 0px);
+    height: calc(var(--time-line-outcome-height) - 2* var(--padding));
+    float: left;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: var(--element-background-color);
+    padding: var(--padding) var(--padding) var(--padding) var(--padding);
+}
+
+.outcome {
+    display: inline-block;
+    width: calc(100% - 2* var(--padding) - 0px);
+    height: calc(var(--time-line-outcome-height) - 0* var(--padding));
+    position: relative;
+    background-color: var(--element-background-color);
+    padding: var(--padding) var(--padding) var(--padding) var(--padding);
+}
+
+
+/*------------------------------------------------------------------------Scatter Plot-----------------------------------------------*/
+.bar {
+    fill: var(--main-font-color);
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.axis--x path {
+    display: none;
+}
+
+.axis path{
+    stroke: var(--main-font-color);
+}
+
+.axis text {
+    fill: var(--main-font-color);
+}
+
+.axis line {
+    stroke: var(--main-font-color);
+}
+
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    height: 120px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: #dbe4f0;
+    border: 0;
+    border-radius: 8px;
+    pointer-events: none;
+    fill: var(--main-font-color);
+}
+
+
+/*change font color of rSlider*/
+.slider .noUi-connect {
+    background: lightsteelblue;
+}
+
+
+input[type=text] {
+    width: calc(100% - 2* var(--padding));
+    /*width: 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;*/
+    float:right;
+    box-sizing: border-box;
+    border: 3px solid var(--main-font-color);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: var(--element-background-color);
+    background-image: url('icons/searchpng.png');
+    background-position: 10px 10px;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    margin: var(--padding) var(--padding) var(--padding) var(--padding);
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: calc(100% - 2* var(--padding));
+}
+
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+    width:calc(100% - 70px);
+    height: 56px;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid var(--main-font-color);
+}
+
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: var(--main-font-color) !important;
+    color: #ffffff;
+}
+
+
+
+.legend_evidences{
+    margin-left: calc(2 * var(--padding));
+    /*margin-top: 0px;*/
+    width: calc(100% - 4* var(--padding));
+    height: var(--legend_height);
+    background-color: #6a63b2;
+}
+
+.bar_chart_example{
+    margin-left: 0px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 150px);
+    /*flex: 1 1 auto;*/
+    /*width: calc(100% - 4* var(--padding));*/
+    /*height: 500px;*/
+    background-color: var(--element-background-color);
+}
+
+.bar_chart_legend{
+    margin-left: 0px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    /*flex: 1 1 auto;*/
+    /*width: calc(100% - 4* var(--padding));*/
+    /*height: 500px;*/
+    background-color: var(--element-background-color);
+}
+
+
+.add_button {
+     width: 49px;
+     height: 49px;
+     position: relative;
+     float: right;
+     margin-right: 10px;
+     margin-top: 5px;
+ }
+
+
+/*************************************************Canvas Menue********************************/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    background-color: var(--element-background-color);
+    padding-top: 60px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#canvas_list_div{
+    overflow-y: auto;
+    width: 100%;
+    padding-left: 5px;
+}
+
+#sidenav_content {
+    height: 100%;
+    width: 100%;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#node_name_input_box {
+    background-image: url('icons/searchpng.png');
+    background-position: 12px 12px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+
+#list_of_all_nodes {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#list_of_all_nodes li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #d1d0d3;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+#list_of_all_nodes li a:hover {
+    background-color: #f1f1f1;
+}
+

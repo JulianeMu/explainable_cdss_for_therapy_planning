@@ -1,0 +1,93 @@
+.navbar {
+    overflow: hidden;
+    background-color: var(--main-font-color);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    /*position: relative;*/
+    /*float: left;*/
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    /*position: relative;*/
+    /*float: left;*/
+    overflow: hidden;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #6a63b2;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    float: none;
+    color: steelblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 100;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+    z-index: 100;
+}
+
+
+h1, h2, h3, p, ul, li{
+    color: var(--main-font-color);
+}
+p {
+    padding-top: 5px;
+    font-weight: var(--main-font-weight);
+}
+
+a {
+    color: lightsteelblue;
+}
+
+mark {
+    background-color: lightsteelblue;
+}
+.noUi-value-sub, .noUi-pips {
+    color: steelblue;
+}
+
+.noUi-marker-large, .noUi-marker-sub {
+    background: steelblue;
+}

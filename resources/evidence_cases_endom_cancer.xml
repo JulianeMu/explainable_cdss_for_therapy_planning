@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cases>
+	<case name="CaseEndomCancer">
+		<evidence node="CTMRI" state="yes"/>
+		<evidence node="LVSI" state="yes"/>
+	</case>
+	<case name="CaseEndomCancer2">
+		<evidence node="p53" state="wildtype"/>
+		<evidence node="L1CAM" state="negative"/>
+	</case>
+</cases>

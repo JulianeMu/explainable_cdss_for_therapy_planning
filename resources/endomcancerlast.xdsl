@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Sub0" numsamples="1000">
+	<nodes>
+		<cpt id="Cytology">
+			<state id="no" />
+			<state id="yes" />
+			<probabilities>0.96330275 0.03669725</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="MyometrialInvasion">
+			<state id="no" />
+			<state id="lt_50" />
+			<state id="ge_50" />
+			<probabilities>0.07601573000000002 0.5517693300000001 0.37221494</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="PrimaryTumor">
+			<state id="grade_1" />
+			<state id="grade_2" />
+			<state id="grade_3" />
+			<probabilities>0.5806029 0.231979 0.1874181</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="Histology">
+			<state id="grade_1" />
+			<state id="grade_2" />
+			<state id="grade_3" />
+			<parents>Cytology MyometrialInvasion PrimaryTumor</parents>
+			<probabilities>0.8222222 0.1777778 0 0.1428571 0.8571429 0 0 0 1 0.68217054 0.31007752 0.00775194 0.26086957 0.65217391 0.08695652 0.09836066 0.21311475 0.68852459 0.44274809 0.48091603 0.07633587999999999 0.17647058 0.61764704 0.20588238 0.01470588 0.08823528999999999 0.89705883 1 0 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 0.5 0.5 0 0.6666666999999999 0.3333333 0 0.3333333 0.6666666999999999 0.25 0.5 0.25 0 0.5714286 0.4285714 0 0 1</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="Therapy">
+			<state id="no" />
+			<state id="radiotx" />
+			<state id="chemotx" />
+			<state id="chemoradiotx" />
+			<parents>Histology</parents>
+			<probabilities>0.6498422700000001 0.33123028 0.00630915 0.0126183 0.5570934200000001 0.3875432500000001 0.02076125 0.03460208000000001 0.31210191 0.42038217 0.1910828 0.07643311999999999</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="LVSI">
+			<state id="no" />
+			<state id="yes" />
+			<parents>Cytology Histology Therapy</parents>
+			<probabilities>0.9658536599999999 0.03414634 0.875 0.125 0 1 0.75 0.25 0.91194969 0.08805031000000001 0.8971962999999999 0.1028037 1 0 0.4285714 0.5714286 0.6666666999999999 0.3333333 0.7258065 0.2741935 0.3333333 0.6666666999999999 0.3636364 0.6363636 1 0 1 0 0.5 0.5 0.5 0.5 1 0 0.6 0.4 1 0 0 1 0.1428571 0.8571429 0.25 0.75 0 1 1 0</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="LNM">
+			<state id="no" />
+			<state id="yes" />
+			<parents>Histology LVSI MyometrialInvasion Therapy</parents>
+			<probabilities>1 0 1 0 0.5 0.5 0.5 0.5 1 0 1 0 0.5 0.5 1 0 1 0 0.97297297 0.02702703 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1 0 1 0 0.5 0.5 0 1 0.5 0.5 1 0 1 0 0.5 0.5 1 0 1 0 0.5 0.5 0.5 0.5 1 0 0.94736842 0.05263158 0.3333333 0.6666666999999999 1 0 0.97297297 0.02702703 0.95 0.05 0.3333333 0.6666666999999999 1 0 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.6666666999999999 0.3333333 1 0 0.5 0.5 0.6666666999999999 0.3333333 0.8 0.2 0.5 0.5 0.5 0.5 0.75 0.25 1 0 0.5 0.5 0.5 0.5 0.5 0.5 1 0 1 0 0 1 1 0 1 0 0.93103448 0.06896552 0.6 0.4 0.5 0.5 1 0 0.5 0.5 0.5 0.5 0.5 0.5 0.5714286 0.4285714 1 0 0.6666666999999999 0.3333333 1 0 0 1 0.8666667 0.1333333 0.06666667 0.93333333 0.25 0.75</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="CA125">
+			<state id="lt_35" />
+			<state id="ge_35" />
+			<parents>LNM</parents>
+			<probabilities>0.8791367 0.1208633 0.2794118 0.7205882</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="Recurrence">
+			<state id="no" />
+			<state id="regional_distant" />
+			<state id="local" />
+			<parents>CA125 Histology LNM LVSI</parents>
+			<probabilities>0.98127341 0.01872659 0 1 0 0 1 0 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.9013452900000002 0.08071749000000002 0.01793722 0.7894736999999999 0.2105263 0 1 0 0 1 0 0 0.91935484 0.08064515999999999 0 0.5384615 0.4615385 0 0.2 0.4 0.4 0.4285714 0.5714286 0 0.96153846 0 0.03846154 0.25 0.75 0 0.3333333333333333 0.3333333333333333 0.3333333333333333 0 1 0 0.7727272700000002 0.18181818 0.04545455000000001 0.6666666999999999 0.3333333 0 0.375 0.625 0 0.8 0 0.2 0.625 0.375 0 0.6666666999999999 0.3333333 0 0.3333333 0.5 0.1666667 0.4827586 0.5172414 0</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="Survival5yr">
+			<state id="yes" />
+			<state id="no" />
+			<parents>Recurrence Therapy</parents>
+			<probabilities>0.99204244 0.007957560000000001 0.996 0.004 1 0 1 0 0.5588235 0.4411765 0.5 0.5 0.1904762 0.8095238 0.5555556 0.4444444 0.6 0.4 1 0 0 1 0.5 0.5</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="Platelets">
+			<state id="lt_400" />
+			<state id="ge_400" />
+			<parents>LNM</parents>
+			<probabilities>0.9697841699999999 0.03021583 0.94117647 0.05882353</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="ER">
+			<state id="positive" />
+			<state id="negative" />
+			<parents>Histology LNM</parents>
+			<probabilities>0.96507937 0.03492063 1 0 0.93333333 0.06666667 0.94736842 0.05263158 0.7272727 0.2727273 0.6595745 0.3404255</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="CTMRI">
+			<state id="no" />
+			<state id="yes" />
+			<parents>CA125 LNM</parents>
+			<probabilities>0.98854337 0.01145663 0.8947368 0.1052632 0.7857143 0.2142857 0.7755102 0.2244898</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="Survival3yr">
+			<state id="yes" />
+			<state id="no" />
+			<parents>Recurrence Therapy Survival5yr</parents>
+			<probabilities>1 0 1 0 1 0 0 1 1 0 0.5 0.5 1 0 0.5 0.5 1 0 0.2 0.8 1 0 0.2666667 0.7333333 1 0 0.1764706 0.8235294 1 0 0.25 0.75 1 0 1 0 1 0 0.5 0.5 0.5 0.5 0 1 0.5 0.5 0.5 0.5</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="PR">
+			<state id="positive" />
+			<state id="negative" />
+			<parents>ER Histology LNM</parents>
+			<probabilities>0.91447368 0.08552632 1 0 0.90079365 0.09920635 0.9444444400000001 0.05555556 0.775 0.225 0.8064516 0.1935484 0.4545455 0.5454545 0.5 0.5 0.2222222 0.7777778 0 1 0.1333333 0.8666667 0.0625 0.9375</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="L1CAM">
+			<state id="negative" />
+			<state id="positive" />
+			<parents>Histology LNM PR</parents>
+			<probabilities>0.98939929 0.01060071 0.8125 0.1875 1 0 0.5 0.5 0.95238095 0.04761905 0.8205128 0.1794872 0.8235294 0.1764706 0.5 0.5 0.8484848 0.1515152 0.5227273 0.4772727 0.7692308 0.2307692 0.4285714 0.5714286</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="p53">
+			<state id="wildtype" />
+			<state id="mutant" />
+			<parents>Histology L1CAM LNM</parents>
+			<probabilities>0.94771242 0.05228758 0.5 0.5 0.8888889 0.1111111 0.5 0.5 0.90079365 0.09920635 0.6666666999999999 0.3333333 0.6111111 0.3888889 0.5 0.5 0.7088608 0.2911392 0.8275862 0.1724138 0.2903226 0.7096774 0.2222222 0.7777778</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+		<cpt id="Survival1yr">
+			<state id="yes" />
+			<state id="no" />
+			<parents>Recurrence Therapy Survival3yr Survival5yr</parents>
+			<probabilities>1 0 1 0 0.5 0.5 0.5 0.5 1 0 0.5 0.5 0.5 0.5 1 0 1 0 0.5 0.5 0.5 0.5 0.5 0.5 1 0 0.5 0.5 0.5 0.5 0.5 0.5 1 0 1 0 0.5 0.5 0.5833333000000001 0.4166667 1 0 1 0 0.5 0.5 0.5454545 0.4545455 1 0 1 0 0.5 0.5 0.6428571 0.3571429 1 0 1 0 0.5 0.5 0.6666666999999999 0.3333333 1 0 1 0 0.5 0.5 0.5 0.5 1 0 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1 0 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</probabilities>
+			<property id="ismapvariable">false</property>
+			<property id="excludepolicy">include whole CPT</property>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.2746.0" name="Sub0" faultnameformat="nodestate">
+			<node id="Cytology">
+				<name>Endometrium in cervical cytology</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>39 179 115 215</position>
+			</node>
+			<node id="MyometrialInvasion">
+				<name>Myometrial invasion</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>37 31 113 67</position>
+			</node>
+			<node id="PrimaryTumor">
+				<name>Preoperative grade</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>39 319 115 355</position>
+			</node>
+			<node id="Histology">
+				<name>Postoperative grade</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>249 224 325 260</position>
+			</node>
+			<node id="Therapy">
+				<name>Adjuvant therapy</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>136 415 212 451</position>
+			</node>
+			<node id="LVSI">
+				<name>LVSI</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>445 384 521 420</position>
+			</node>
+			<node id="LNM">
+				<name>Lymph node metastasis</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>602 227 678 263</position>
+			</node>
+			<node id="CA125">
+				<name>CA125</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>859 294 935 330</position>
+			</node>
+			<node id="Recurrence">
+				<name>Recurrence</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>766 399 842 435</position>
+			</node>
+			<node id="Survival5yr">
+				<name>Survival 5yr</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>865 625 941 661</position>
+			</node>
+			<node id="Platelets">
+				<name>Platelets</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>858 95 934 131</position>
+			</node>
+			<node id="ER">
+				<name>Estrogen receptor</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>856 6 932 42</position>
+			</node>
+			<node id="CTMRI">
+				<name>Enlarged nodes CT</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>858 178 934 214</position>
+			</node>
+			<node id="Survival3yr">
+				<name>Survival 3yr</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>687 522 763 558</position>
+			</node>
+			<node id="PR">
+				<name>Progesteron receptor</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>655 8 731 44</position>
+			</node>
+			<node id="L1CAM">
+				<name>L1CAM</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>447 5 523 41</position>
+			</node>
+			<node id="p53">
+				<name>p53</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>238 4 314 40</position>
+			</node>
+			<node id="Survival1yr">
+				<name>Survival 1yr</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="Arial" size="8" />
+				<position>355 532 431 568</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

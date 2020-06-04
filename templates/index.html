@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-----------------------------------STYLE---------------------------------------------->
+
+
+<!-----------------------------------SCRIPTS---------------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <title>Explainable CDSS</title>
+
+    <!----------------------LIBRARIES----------------------------------------------------------->
+    <script src="libraries/jquery/jquery.min.js" type="text/javascript"></script>
+    <!--<script src="libraries/d3js/d3.v4.min.js"></script>-->
+    <script src="libraries/d3js/d3.v5.min.js" type="text/javascript"></script>
+
+    <script src="libraries/nouislider/nouislider.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="libraries/nouislider/nouislider.min.css">
+
+    <script src="structured_exploration/libraries/textures.js" type="text/javascript"></script>
+
+    <!----------------------------SCRIPTS---------------------------------------------------------->
+    <!--------global---------------------------->
+    <script src="global_variables.js" type="text/javascript"></script>
+    <script src="multi_language_strings/language_strings.js" type="text/javascript"></script>
+    <script src="multi_language_strings/TNM_Guidelines_strings.js" type="text/javascript"></script>
+
+    <script src="multi_language_strings/therapy_html_code/surgery.js" type="text/javascript"></script>
+    <script src="multi_language_strings/therapy_html_code/radiation.js" type="text/javascript"></script>
+    <script src="multi_language_strings/therapy_html_code/chemotherapy.js" type="text/javascript"></script>
+    <script src="multi_language_strings/therapy_html_code/targeted_therapy.js" type="text/javascript"></script>
+    <script src="multi_language_strings/therapy_html_code/by_stage.js" type="text/javascript"></script>
+    <script src="multi_language_strings/therapy_html_code/recurrent.js" type="text/javascript"></script>
+    <script src="multi_language_strings/therapy_html_code/tnm_guidelines.js" type="text/javascript"></script>
+    <script src="multi_language_strings/therapy_html_code/doctorsletters_example.js" type="text/javascript"></script>
+    <script src="multi_language_strings/therapy_html_code/indications.js" type="text/javascript"></script>
+
+
+    <!--------view------------------------------>
+    <script src="view/view_heading.js" type="text/javascript"></script>
+    <script src="view/view_plot.js" type="text/javascript"></script>
+    <script src="view/view_filterMethods.js" type="text/javascript"></script>
+    <script src="view/view_guidelines.js" type="text/javascript"></script>
+    <script src="view/therapy_html_code.js" type="text/javascript"></script>
+    <script src="view/view_outcome.js" type="text/javascript"></script>
+    <script src="view/tooltip.js" type="text/javascript"></script>
+    <script src="view/generate_pie_text.js" type="text/javascript"></script>
+    <script src="view/general_view_methods.js" type="text/javascript"></script>
+    <script src="view/fill_in_guidelines.js" type="text/javascript"></script>
+    <script src="view/view_filter_methods_new.js" type="text/javascript"></script>
+    <script src="view/evidence_view.js" type="text/javascript"></script>
+
+    <!--------controller------------------------>
+    <script src="controller/controller.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="view/dropdown_menu.css">
+
+    <script src="structured_exploration/lookuptable_node_names.js" type="text/javascript"></script>
+    <script src="view/set_evidence_in_plot.js" type="text/javascript"></script>
+
+    <script src="structured_exploration/libraries/slider/slider.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="structured_exploration/libraries/slider/slider.css">
+
+    <!--<script src="structured_exploration/view/create_donut.js" type="text/javascript"></script>-->
+
+
+</head>
+<body>
+
+<div id="whole_view" class="whole_view">
+    <div id="heading" class="heading">
+        <div id="heading_text" class="heading_text"></div>
+        <div id="sap_number_id" class="sap_id"></div>
+        <div id="sap_id" class="sap_id"></div>
+        <div id="patient_name" class="patient_name"></div>
+    </div>
+    <div id="plot" class="plot">
+        <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete">
+                <input id="myInput" type="text" name="search" placeholder="Search.." value="">
+            </div>
+            <div id="add_button" class="add_button" onclick="add_evidence('plot')"></div>
+        </form>
+        <div id="bar_chart_legend" class="bar_chart_legend"></div>
+        <div id="bar_chart_example" class="bar_chart_example"></div>
+
+    </div>
+    <div id="guidelines_outcome" class="guidelines_outcome">
+        <div id="guidelines_all" class="guidelines_all"></div>
+        <!--<div id="filter_methods" class="filter_methods"></div>-->
+        <div id="outcome" class="outcome"></div>
+    </div>
+</div>
+<!--<div id="legend_evidences" class="legend_evidences"></div>-->
+
+<!--<iframe id="iframe_structured_exploration" class="structured_exploration" src="./structured_exploration/structured_exploration.html"></iframe>-->
+<iframe id="iframe_structured_exploration" class="structured_exploration"></iframe>
+
+<script>
+
+    $.get('icons/add_button.svg', function (data) {
+        $('#add_button').append(data.documentElement)
+    });
+
+    let loaded_model = false;
+    // get model.js test data
+    $.getScript("model/model.js", function () {
+        loaded_model = true;
+        console.log('loaded model');
+
+        if (loaded_model) {
+            initialization();
+        }
+    });
+
+
+</script>
+</body>
+</html>

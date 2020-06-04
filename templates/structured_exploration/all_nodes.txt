@@ -1,0 +1,630 @@
+primär Radiochemo
+Teilresektion des Kehlkopfs
+Induktion Chemotherapie
+Vollresektion des Kehlkopfs
+
+
+Adjevant ja! nein
+Radiotherapie oder Radiochemotherapie! zu sehr hohen Wahrscheinlichkeit
+
+
+Kapselüberschweifende Lymphknoten
+positive Lymphknoten --> deshalb diese Therapie
+N Status
+N count
+T
+M
+
+
+Kapselar spread 5 Kapselüberschreitende Lymphknoten
+steht nebeneinander N und N-state
+
+["0", "larynx_tumor_type__patient", "larynx_tumor_type__patient", "false", "false"]
+1
+["1", "larynx_tumor_type_clinical__patient", "larynx_tumor_type_clinical__patient", "false", "false"]
+2
+["2", "larynx_tumor_size__patient", "larynx_tumor_size__patient", "false", "false"]
+3
+["3", "larynx_infiltration_extrinsic_muscle_tongue__patient", "larynx_infiltration_extrinsic_muscle_tongue__patient", "false", "false"]
+4
+["4", "larynx_infiltration_ACI_ACC__patient", "larynx_infiltration_ACI_ACC__patient", "false", "false"]
+5
+["5", "larynx_infiltration_ACI_ACC_angiography__patient", "larynx_infiltration_ACI_ACC_angiography__patient", "false", "false"]
+6
+["6", "larynx_infiltration_pre_epiglottic_space__patient", "larynx_infiltration_pre_epiglottic_space__patient", "false", "false"]
+7
+["7", "larynx_infiltration_prevertebral_space__patient", "larynx_infiltration_prevertebral_space__patient", "false", "false"]
+8
+["8", "larynx_infiltration_thyroid__patient", "larynx_infiltration_thyroid__patient", "false", "false"]
+9
+["9", "larynx_infiltration_thyroid_PET_neck__patient", "larynx_infiltration_thyroid_PET_neck__patient", "false", "false"]
+10
+["10", "larynx_infiltration_trachea__patient", "larynx_infiltration_trachea__patient", "false", "false"]
+11
+["11", "larynx_infiltration_pyriform_sinus__patient", "larynx_infiltration_pyriform_sinus__patient", "false", "false"]
+12
+["12", "larynx_infiltration_soft_tissue_neck__patient", "larynx_infiltration_soft_tissue_neck__patient", "false", "false"]
+13
+["13", "larynx_infiltration_mediastinum__patient", "larynx_infiltration_mediastinum__patient", "false", "false"]
+14
+["14", "larynx_infiltration_tongue_base__patient", "larynx_infiltration_tongue_base__patient", "false", "false"]
+15
+["15", "larynx_infiltration_esophagus__patient", "larynx_infiltration_esophagus__patient", "false", "false"]
+16
+["16", "other_location_M__patient", "other_location_M__patient", "false", "false"]
+17
+["17", "larynx_infiltration_arytenoid_cartilage__patient", "larynx_infiltration_arytenoid_cartilage__patient", "false", "false"]
+18
+["18", "larynx_infiltration_strap_muscles__patient", "larynx_infiltration_strap_muscles__patient", "false", "false"]
+19
+["19", "larynx_infiltration_postcricoid_area__patient", "larynx_infiltration_postcricoid_area__patient", "false", "false"]
+20
+["20", "larynx_infiltration_infrahyoid_epiglottis__patient", "larynx_infiltration_infrahyoid_epiglottis__patient", "false", "false"]
+21
+["21", "larynx_tumor_localization__patient", "larynx_tumor_localization__patient", "false", "false"]
+22
+["22", "larynx_tumor_side__patient", "larynx_tumor_side__patient", "false", "false"]
+23
+["23", "N_count__patient", "N_count__patient", "false", "false"]
+24
+["24", "larynx_infiltration_aryepiglottic_fold__patient", "larynx_infiltration_aryepiglottic_fold__patient", "false", "false"]
+25
+["25", "larynx_infiltration_esophagus_swallowing_Xray__patient", "larynx_infiltration_esophagus_swallowing_Xray__patient", "false", "false"]
+26
+["26", "larynx_infiltration_thyroid_cartilage__patient", "larynx_infiltration_thyroid_cartilage__patient", "false", "false"]
+27
+["27", "larynx_infiltration_commisures__patient", "larynx_infiltration_commisures__patient", "false", "false"]
+28
+["28", "larynx_infiltration_commisures_clinical_examination__patient", "larynx_infiltration_commisures_clinical_examination__patient", "false", "false"]
+29
+["29", "larynx_infiltration_vallecula__patient", "larynx_infiltration_vallecula__patient", "false", "false"]
+30
+["30", "larynx_infiltration_suprahyoid_epiglottis__patient", "larynx_infiltration_suprahyoid_epiglottis__patient", "false", "false"]
+31
+["31", "larynx_function_vocal_fold__patient", "larynx_function_vocal_fold__patient", "false", "false"]
+32
+["32", "larynx_infiltration_vestibular_fold__patient", "larynx_infiltration_vestibular_fold__patient", "false", "false"]
+33
+["33", "larynx_infiltration_paraepiglottic_space__patient", "larynx_infiltration_paraepiglottic_space__patient", "false", "false"]
+34
+["34", "larynx_infiltration_vocal_fold__patient", "larynx_infiltration_vocal_fold__patient", "false", "false"]
+35
+["35", "larynx_glottis_infiltration_subside__patient", "larynx_glottis_infiltration_subside__patient", "false", "false"]
+36
+["36", "larynx_very_advanced_local_infiltration__patient", "larynx_very_advanced_local_infiltration__patient", "false", "false"]
+37
+["37", "larynx_supraglottis_infiltration_subsides__patient", "larynx_supraglottis_infiltration_subsides__patient", "false", "false"]
+38
+["38", "larynx_advanced_local_infiltration__patient", "larynx_advanced_local_infiltration__patient", "false", "false"]
+39
+["39", "larynx_infiltration_extrinsic_muscle_tongue_endoscopy__patient", "larynx_infiltration_extrinsic_muscle_tongue_endoscopy__patient", "false", "false"]
+40
+["40", "larynx_infiltration_extrinsic_muscle_tongue_function__patient", "larynx_infiltration_extrinsic_muscle_tongue_function__patient", "false", "false"]
+41
+["41", "larynx_infiltration_extrinsic_muscle_tongue_intra_OP__patient", "larynx_infiltration_extrinsic_muscle_tongue_intra_OP__patient", "false", "false"]
+42
+["42", "larynx_infiltration_extrinsic_muscle_tongue_CT_neck__patient", "larynx_infiltration_extrinsic_muscle_tongue_CT_neck__patient", "false", "false"]
+43
+["43", "larynx_infiltration_extrinsic_muscle_tongue_MRI_neck__patient", "larynx_infiltration_extrinsic_muscle_tongue_MRI_neck__patient", "false", "false"]
+44
+["44", "larynx_infiltration_extrinsic_muscle_tongue_Sono_neck__patient", "larynx_infiltration_extrinsic_muscle_tongue_Sono_neck__patient", "false", "false"]
+45
+["45", "larynx_infiltration_extrinsic_muscle_tongue_PET_neck__patient", "larynx_infiltration_extrinsic_muscle_tongue_PET_neck__patient", "false", "false"]
+46
+["46", "larynx_infiltration_extrinsic_muscle_tongue_patho__patient", "larynx_infiltration_extrinsic_muscle_tongue_patho__patient", "false", "false"]
+47
+["47", "larynx_infiltration_ACI_ACC_intra_OP__patient", "larynx_infiltration_ACI_ACC_intra_OP__patient", "false", "false"]
+48
+["48", "larynx_infiltration_ACI_ACC_CT_neck__patient", "larynx_infiltration_ACI_ACC_CT_neck__patient", "false", "false"]
+49
+["49", "larynx_infiltration_ACI_ACC_Sono_neck__patient", "larynx_infiltration_ACI_ACC_Sono_neck__patient", "false", "false"]
+50
+["50", "larynx_infiltration_ACI_ACC_MRI_neck__patient", "larynx_infiltration_ACI_ACC_MRI_neck__patient", "false", "false"]
+51
+["51", "larynx_infiltration_ACI_ACC_PET_neck__patient", "larynx_infiltration_ACI_ACC_PET_neck__patient", "false", "false"]
+52
+["52", "larynx_infiltration_ACI_ACC_patho__patient", "larynx_infiltration_ACI_ACC_patho__patient", "false", "false"]
+53
+["53", "larynx_infiltration_pre_epiglottic_space_PET_neck__patient", "larynx_infiltration_pre_epiglottic_space_PET_neck__patient", "false", "false"]
+54
+["54", "larynx_infiltration_pre_epiglottic_space_function__patient", "larynx_infiltration_pre_epiglottic_space_function__patient", "false", "false"]
+55
+["55", "larynx_infiltration_pre_epiglottic_space_CT_neck__patient", "larynx_infiltration_pre_epiglottic_space_CT_neck__patient", "false", "false"]
+56
+["56", "larynx_infiltration_pre_epiglottic_space_MRI_neck__patient", "larynx_infiltration_pre_epiglottic_space_MRI_neck__patient", "false", "false"]
+57
+["57", "larynx_infiltration_pre_epiglottic_space_patho__patient", "larynx_infiltration_pre_epiglottic_space_patho__patient", "false", "false"]
+58
+["58", "larynx_infiltration_pre_epiglottic_space_intra_OP__patient", "larynx_infiltration_pre_epiglottic_space_intra_OP__patient", "false", "false"]
+59
+["59", "larynx_infiltration_pre_epiglottic_space_Sono_neck__patient", "larynx_infiltration_pre_epiglottic_space_Sono_neck__patient", "false", "false"]
+60
+["60", "larynx_infiltration_prevertebral_space_PET_neck__patient", "larynx_infiltration_prevertebral_space_PET_neck__patient", "false", "false"]
+61
+["61", "larynx_infiltration_prevertebral_space_Sono_neck__patient", "larynx_infiltration_prevertebral_space_Sono_neck__patient", "false", "false"]
+62
+["62", "larynx_infiltration_prevertebral_space_patho__patient", "larynx_infiltration_prevertebral_space_patho__patient", "false", "false"]
+63
+["63", "larynx_infiltration_prevertebral_space_function__patient", "larynx_infiltration_prevertebral_space_function__patient", "false", "false"]
+64
+["64", "larynx_infiltration_prevertebral_space_intra_OP__patient", "larynx_infiltration_prevertebral_space_intra_OP__patient", "false", "false"]
+65
+["65", "larynx_infiltration_prevertebral_space_MRI_neck__patient", "larynx_infiltration_prevertebral_space_MRI_neck__patient", "false", "false"]
+66
+["66", "larynx_infiltration_prevertebral_space_endoscopy__patient", "larynx_infiltration_prevertebral_space_endoscopy__patient", "false", "false"]
+67
+["67", "larynx_infiltration_prevertebral_space_CT_neck__patient", "larynx_infiltration_prevertebral_space_CT_neck__patient", "false", "false"]
+68
+["68", "larynx_infiltration_thyroid_CT_neck__patient", "larynx_infiltration_thyroid_CT_neck__patient", "false", "false"]
+69
+["69", "larynx_infiltration_thyroid_Sono_neck__patient", "larynx_infiltration_thyroid_Sono_neck__patient", "false", "false"]
+70
+["70", "larynx_infiltration_thyroid_intra_OP__patient", "larynx_infiltration_thyroid_intra_OP__patient", "false", "false"]
+71
+["71", "larynx_infiltration_thyroid_function__patient", "larynx_infiltration_thyroid_function__patient", "false", "false"]
+72
+["72", "larynx_infiltration_thyroid_MRI_neck__patient", "larynx_infiltration_thyroid_MRI_neck__patient", "false", "false"]
+73
+["73", "larynx_infiltration_thyroid_patho__patient", "larynx_infiltration_thyroid_patho__patient", "false", "false"]
+74
+["74", "larynx_infiltration_trachea_MRI_neck__patient", "larynx_infiltration_trachea_MRI_neck__patient", "false", "false"]
+75
+["75", "larynx_infiltration_trachea_CT_neck__patient", "larynx_infiltration_trachea_CT_neck__patient", "false", "false"]
+76
+["76", "larynx_infiltration_trachea_function__patient", "larynx_infiltration_trachea_function__patient", "false", "false"]
+77
+["77", "larynx_infiltration_trachea_patho__patient", "larynx_infiltration_trachea_patho__patient", "false", "false"]
+78
+["78", "larynx_infiltration_trachea_intra_OP__patient", "larynx_infiltration_trachea_intra_OP__patient", "false", "false"]
+79
+["79", "larynx_infiltration_trachea_endoscopy__patient", "larynx_infiltration_trachea_endoscopy__patient", "false", "false"]
+80
+["80", "larynx_infiltration_trachea_Sono_neck__patient", "larynx_infiltration_trachea_Sono_neck__patient", "false", "false"]
+81
+["81", "larynx_infiltration_trachea_PET_neck__patient", "larynx_infiltration_trachea_PET_neck__patient", "false", "false"]
+82
+["82", "larynx_infiltration_pyriform_sinus_CT_neck__patient", "larynx_infiltration_pyriform_sinus_CT_neck__patient", "false", "false"]
+83
+["83", "larynx_infiltration_pyriform_sinus_intra_OP__patient", "larynx_infiltration_pyriform_sinus_intra_OP__patient", "false", "false"]
+84
+["84", "larynx_infiltration_pyriform_sinus_patho__patient", "larynx_infiltration_pyriform_sinus_patho__patient", "false", "false"]
+85
+["85", "larynx_infiltration_pyriform_sinus_endoscopy__patient", "larynx_infiltration_pyriform_sinus_endoscopy__patient", "false", "false"]
+86
+["86", "larynx_infiltration_pyriform_sinus_function__patient", "larynx_infiltration_pyriform_sinus_function__patient", "false", "false"]
+87
+["87", "larynx_infiltration_pyriform_sinus_PET_neck__patient", "larynx_infiltration_pyriform_sinus_PET_neck__patient", "false", "false"]
+88
+["88", "larynx_infiltration_pyriform_sinus_MRI_neck__patient", "larynx_infiltration_pyriform_sinus_MRI_neck__patient", "false", "false"]
+89
+["89", "larynx_infiltration_soft_tissue_neck_CT_neck__patient", "larynx_infiltration_soft_tissue_neck_CT_neck__patient", "false", "false"]
+90
+["90", "larynx_infiltration_soft_tissue_neck_Sono_neck__patient", "larynx_infiltration_soft_tissue_neck_Sono_neck__patient", "false", "false"]
+91
+["91", "larynx_infiltration_soft_tissue_neck_PET_neck__patient", "larynx_infiltration_soft_tissue_neck_PET_neck__patient", "false", "false"]
+92
+["92", "larynx_infiltration_soft_tissue_neck_endoscopy__patient", "larynx_infiltration_soft_tissue_neck_endoscopy__patient", "false", "false"]
+93
+["93", "larynx_infiltration_soft_tissue_neck_function__patient", "larynx_infiltration_soft_tissue_neck_function__patient", "false", "false"]
+94
+["94", "larynx_infiltration_soft_tissue_neck_intra_OP__patient", "larynx_infiltration_soft_tissue_neck_intra_OP__patient", "false", "false"]
+95
+["95", "larynx_infiltration_soft_tissue_neck_patho__patient", "larynx_infiltration_soft_tissue_neck_patho__patient", "false", "false"]
+96
+["96", "larynx_infiltration_soft_tissue_neck_MRI_neck__patient", "larynx_infiltration_soft_tissue_neck_MRI_neck__patient", "false", "false"]
+97
+["97", "larynx_infiltration_mediastinum_endosono__patient", "larynx_infiltration_mediastinum_endosono__patient", "false", "false"]
+98
+["98", "larynx_infiltration_mediastinum_patho__patient", "larynx_infiltration_mediastinum_patho__patient", "false", "false"]
+99
+["99", "larynx_infiltration_mediastinum_CT_thorax__patient", "larynx_infiltration_mediastinum_CT_thorax__patient", "false", "false"][100 … 199]
+100
+["100", "larynx_infiltration_mediastinum_MRI_thorax__patient", "larynx_infiltration_mediastinum_MRI_thorax__patient", "false", "false"]
+101
+["101", "larynx_infiltration_mediastinum_endoscopy__patient", "larynx_infiltration_mediastinum_endoscopy__patient", "false", "false"]
+102
+["102", "larynx_infiltration_mediastinum_PET_thorax__patient", "larynx_infiltration_mediastinum_PET_thorax__patient", "false", "false"]
+103
+["103", "larynx_infiltration_mediastinum_intra_OP__patient", "larynx_infiltration_mediastinum_intra_OP__patient", "false", "false"]
+104
+["104", "larynx_infiltration_mediastinum_Sono_thorax__patient", "larynx_infiltration_mediastinum_Sono_thorax__patient", "false", "false"]
+105
+["105", "larynx_infiltration_tongue_base_intra_OP__patient", "larynx_infiltration_tongue_base_intra_OP__patient", "false", "false"]
+106
+["106", "larynx_infiltration_tongue_base_PET_neck__patient", "larynx_infiltration_tongue_base_PET_neck__patient", "false", "false"]
+107
+["107", "larynx_infiltration_tongue_base_MRI_neck__patient", "larynx_infiltration_tongue_base_MRI_neck__patient", "false", "false"]
+108
+["108", "larynx_infiltration_tongue_base_patho__patient", "larynx_infiltration_tongue_base_patho__patient", "false", "false"]
+109
+["109", "larynx_infiltration_tongue_base_function__patient", "larynx_infiltration_tongue_base_function__patient", "false", "false"]
+110
+["110", "larynx_infiltration_tongue_base_CT_neck__patient", "larynx_infiltration_tongue_base_CT_neck__patient", "false", "false"]
+111
+["111", "larynx_infiltration_tongue_base_endoscopy__patient", "larynx_infiltration_tongue_base_endoscopy__patient", "false", "false"]
+112
+["112", "other_location_M_diagnostic__patient", "other_location_M_diagnostic__patient", "false", "false"]
+113
+["113", "larynx_infiltration_arytenoid_cartilage_endoscopy__patient", "larynx_infiltration_arytenoid_cartilage_endoscopy__patient", "false", "false"]
+114
+["114", "larynx_infiltration_arytenoid_cartilage_patho__patient", "larynx_infiltration_arytenoid_cartilage_patho__patient", "false", "false"]
+115
+["115", "larynx_infiltration_arytenoid_cartilage_intra_OP__patient", "larynx_infiltration_arytenoid_cartilage_intra_OP__patient", "false", "false"]
+116
+["116", "larynx_infiltration_arytenoid_cartilage_MRI_neck__patient", "larynx_infiltration_arytenoid_cartilage_MRI_neck__patient", "false", "false"]
+117
+["117", "larynx_infiltration_arytenoid_cartilage_PET_neck__patient", "larynx_infiltration_arytenoid_cartilage_PET_neck__patient", "false", "false"]
+118
+["118", "larynx_infiltration_arytenoid_cartilage_CT_neck__patient", "larynx_infiltration_arytenoid_cartilage_CT_neck__patient", "false", "false"]
+119
+["119", "larynx_infiltration_arytenoid_cartilage_function__patient", "larynx_infiltration_arytenoid_cartilage_function__patient", "false", "false"]
+120
+["120", "larynx_infiltration_strap_muscles_intra_OP__patient", "larynx_infiltration_strap_muscles_intra_OP__patient", "false", "false"]
+121
+["121", "larynx_infiltration_strap_muscles_patho__patient", "larynx_infiltration_strap_muscles_patho__patient", "false", "false"]
+122
+["122", "larynx_infiltration_strap_muscles_function__patient", "larynx_infiltration_strap_muscles_function__patient", "false", "false"]
+123
+["123", "larynx_infiltration_strap_muscles_MRI_neck__patient", "larynx_infiltration_strap_muscles_MRI_neck__patient", "false", "false"]
+124
+["124", "larynx_infiltration_strap_muscles_CT_neck__patient", "larynx_infiltration_strap_muscles_CT_neck__patient", "false", "false"]
+125
+["125", "larynx_infiltration_strap_muscles_endoscopy__patient", "larynx_infiltration_strap_muscles_endoscopy__patient", "false", "false"]
+126
+["126", "larynx_infiltration_strap_muscles_PET_neck__patient", "larynx_infiltration_strap_muscles_PET_neck__patient", "false", "false"]
+127
+["127", "larynx_infiltration_strap_muscles_Sono_neck__patient", "larynx_infiltration_strap_muscles_Sono_neck__patient", "false", "false"]
+128
+["128", "larynx_infiltration_postcricoid_area_PET_neck__patient", "larynx_infiltration_postcricoid_area_PET_neck__patient", "false", "false"]
+129
+["129", "larynx_infiltration_postcricoid_area_patho__patient", "larynx_infiltration_postcricoid_area_patho__patient", "false", "false"]
+130
+["130", "larynx_infiltration_postcricoid_area_CT_neck__patient", "larynx_infiltration_postcricoid_area_CT_neck__patient", "false", "false"]
+131
+["131", "larynx_infiltration_postcricoid_area_intra_OP__patient", "larynx_infiltration_postcricoid_area_intra_OP__patient", "false", "false"]
+132
+["132", "larynx_infiltration_postcricoid_area_Sono_neck__patient", "larynx_infiltration_postcricoid_area_Sono_neck__patient", "false", "false"]
+133
+["133", "larynx_infiltration_postcricoid_area_MRI_neck__patient", "larynx_infiltration_postcricoid_area_MRI_neck__patient", "false", "false"]
+134
+["134", "larynx_infiltration_postcricoid_area_function__patient", "larynx_infiltration_postcricoid_area_function__patient", "false", "false"]
+135
+["135", "larynx_infiltration_infrahyoid_epiglottis_MRI_neck__patient", "larynx_infiltration_infrahyoid_epiglottis_MRI_neck__patient", "false", "false"]
+136
+["136", "larynx_infiltration_infrahyoid_epiglottis_patho__patient", "larynx_infiltration_infrahyoid_epiglottis_patho__patient", "false", "false"]
+137
+["137", "larynx_infiltration_infrahyoid_epiglottis_endoscopy__patient", "larynx_infiltration_infrahyoid_epiglottis_endoscopy__patient", "false", "false"]
+138
+["138", "larynx_infiltration_infrahyoid_epiglottis_CT_neck__patient", "larynx_infiltration_infrahyoid_epiglottis_CT_neck__patient", "false", "false"]
+139
+["139", "larynx_infiltration_infrahyoid_epiglottis_function__patient", "larynx_infiltration_infrahyoid_epiglottis_function__patient", "false", "false"]
+140
+["140", "larynx_infiltration_infrahyoid_epiglottis_PET_neck__patient", "larynx_infiltration_infrahyoid_epiglottis_PET_neck__patient", "false", "false"]
+141
+["141", "larynx_infiltration_infrahyoid_epiglottis_intra_OP__patient", "larynx_infiltration_infrahyoid_epiglottis_intra_OP__patient", "false", "false"]
+142
+["142", "larynx_infiltration_aryepiglottic_fold_endoscopy__patient", "larynx_infiltration_aryepiglottic_fold_endoscopy__patient", "false", "false"]
+143
+["143", "larynx_infiltration_aryepiglottic_fold_CT_neck__patient", "larynx_infiltration_aryepiglottic_fold_CT_neck__patient", "false", "false"]
+144
+["144", "larynx_infiltration_aryepiglottic_fold_MRI_neck__patient", "larynx_infiltration_aryepiglottic_fold_MRI_neck__patient", "false", "false"]
+145
+["145", "larynx_infiltration_aryepiglottic_fold_function__patient", "larynx_infiltration_aryepiglottic_fold_function__patient", "false", "false"]
+146
+["146", "larynx_infiltration_aryepiglottic_fold_patho__patient", "larynx_infiltration_aryepiglottic_fold_patho__patient", "false", "false"]
+147
+["147", "larynx_infiltration_aryepiglottic_fold_PET_neck__patient", "larynx_infiltration_aryepiglottic_fold_PET_neck__patient", "false", "false"]
+148
+["148", "larynx_infiltration_aryepiglottic_fold_intra_OP__patient", "larynx_infiltration_aryepiglottic_fold_intra_OP__patient", "false", "false"]
+149
+["149", "larynx_infiltration_esophagus_CT_neck__patient", "larynx_infiltration_esophagus_CT_neck__patient", "false", "false"]
+150
+["150", "larynx_infiltration_esophagus_Sono_neck__patient", "larynx_infiltration_esophagus_Sono_neck__patient", "false", "false"]
+151
+["151", "larynx_infiltration_esophagus_Endosono_esophagus__patient", "larynx_infiltration_esophagus_Endosono_esophagus__patient", "false", "false"]
+152
+["152", "larynx_infiltration_esophagus_function__patient", "larynx_infiltration_esophagus_function__patient", "false", "false"]
+153
+["153", "larynx_infiltration_esophagus_PET_neck__patient", "larynx_infiltration_esophagus_PET_neck__patient", "false", "false"]
+154
+["154", "larynx_infiltration_esophagus_patho__patient", "larynx_infiltration_esophagus_patho__patient", "false", "false"]
+155
+["155", "larynx_infiltration_esophagus_intra_OP__patient", "larynx_infiltration_esophagus_intra_OP__patient", "false", "false"]
+156
+["156", "larynx_infiltration_esophagus_MRI_neck__patient", "larynx_infiltration_esophagus_MRI_neck__patient", "false", "false"]
+157
+["157", "larynx_infiltration_esophagus_endoscopy__patient", "larynx_infiltration_esophagus_endoscopy__patient", "false", "false"]
+158
+["158", "larynx_infiltration_thyroid_cartilage_function__patient", "larynx_infiltration_thyroid_cartilage_function__patient", "false", "false"]
+159
+["159", "larynx_infiltration_thyroid_cartilage_CT_neck__patient", "larynx_infiltration_thyroid_cartilage_CT_neck__patient", "false", "false"]
+160
+["160", "larynx_infiltration_thyroid_cartilage_MRI_neck__patient", "larynx_infiltration_thyroid_cartilage_MRI_neck__patient", "false", "false"]
+161
+["161", "larynx_infiltration_thyroid_cartilage_intra_OP__patient", "larynx_infiltration_thyroid_cartilage_intra_OP__patient", "false", "false"]
+162
+["162", "larynx_infiltration_thyroid_cartilage_patho__patient", "larynx_infiltration_thyroid_cartilage_patho__patient", "false", "false"]
+163
+["163", "larynx_infiltration_thyroid_cartilage_Sono_neck__patient", "larynx_infiltration_thyroid_cartilage_Sono_neck__patient", "false", "false"]
+164
+["164", "larynx_infiltration_thyroid_cartilage_PET_neck__patient", "larynx_infiltration_thyroid_cartilage_PET_neck__patient", "false", "false"]
+165
+["165", "larynx_infiltration_commisures_MRI_neck__patient", "larynx_infiltration_commisures_MRI_neck__patient", "false", "false"]
+166
+["166", "larynx_infiltration_commissures_intra_OP__patient", "larynx_infiltration_commissures_intra_OP__patient", "false", "false"]
+167
+["167", "larynx_infiltration_commisures_patho__patient", "larynx_infiltration_commisures_patho__patient", "false", "false"]
+168
+["168", "larynx_infiltration_commisures_Sono_neck__patient", "larynx_infiltration_commisures_Sono_neck__patient", "false", "false"]
+169
+["169", "larynx_infiltration_commisures_CT_neck__patient", "larynx_infiltration_commisures_CT_neck__patient", "false", "false"]
+170
+["170", "larynx_infiltration_commissures_endoscopy__patient", "larynx_infiltration_commissures_endoscopy__patient", "false", "false"]
+171
+["171", "larynx_infiltration_vallecula_MRI_neck__patient", "larynx_infiltration_vallecula_MRI_neck__patient", "false", "false"]
+172
+["172", "larynx_infiltration_vallecula_CT_neck__patient", "larynx_infiltration_vallecula_CT_neck__patient", "false", "false"]
+173
+["173", "larynx_infiltration_vallecula_endoscopy__patient", "larynx_infiltration_vallecula_endoscopy__patient", "false", "false"]
+174
+["174", "larynx_infiltration_vallecula_intra_OP__patient", "larynx_infiltration_vallecula_intra_OP__patient", "false", "false"]
+175
+["175", "larynx_infiltration_vallecula_patho__patient", "larynx_infiltration_vallecula_patho__patient", "false", "false"]
+176
+["176", "larynx_infiltration_vallecula_function__patient", "larynx_infiltration_vallecula_function__patient", "false", "false"]
+177
+["177", "larynx_infiltration_vallecula_PET_neck__patient", "larynx_infiltration_vallecula_PET_neck__patient", "false", "false"]
+178
+["178", "larynx_tumor_localization_patho__patient", "larynx_tumor_localization_patho__patient", "false", "false"]
+179
+["179", "larynx_tumor_localization_CT_neck__patient", "larynx_tumor_localization_CT_neck__patient", "false", "false"]
+180
+["180", "larynx_tumor_localization_clinical_exam__patient", "larynx_tumor_localization_clinical_exam__patient", "false", "false"]
+181
+["181", "larynx_tumor_localization_Sono_neck__patient", "larynx_tumor_localization_Sono_neck__patient", "false", "false"]
+182
+["182", "larynx_tumor_localization_endoscopy__patient", "larynx_tumor_localization_endoscopy__patient", "false", "false"]
+183
+["183", "larynx_tumor_localization_PET_neck__patient", "larynx_tumor_localization_PET_neck__patient", "false", "false"]
+184
+["184", "larynx_tumor_localization_MRT_neck__patient", "larynx_tumor_localization_MRT_neck__patient", "false", "false"]
+185
+["185", "N_count_palpation__patient", "N_count_palpation__patient", "false", "false"]
+186
+["186", "N_count_patho__patient", "N_count_patho__patient", "false", "false"]
+187
+["187", "N_count_Sono__patient", "N_count_Sono__patient", "false", "false"]
+188
+["188", "larynx_infiltration_suprahyoid_epiglottis_intra_OP__patient", "larynx_infiltration_suprahyoid_epiglottis_intra_OP__patient", "false", "false"]
+189
+["189", "larynx_infiltration_suprahyoid_epiglottis_PET_neck__patient", "larynx_infiltration_suprahyoid_epiglottis_PET_neck__patient", "false", "false"]
+190
+["190", "larynx_infiltration_suprahyoid_epiglottis_CT_neck__patient", "larynx_infiltration_suprahyoid_epiglottis_CT_neck__patient", "false", "false"]
+191
+["191", "larynx_infiltration_suprahyoid_epiglottis_patho__patient", "larynx_infiltration_suprahyoid_epiglottis_patho__patient", "false", "false"]
+192
+["192", "larynx_infiltration_suprahyoid_epiglottis_function__patient", "larynx_infiltration_suprahyoid_epiglottis_function__patient", "false", "false"]
+193
+["193", "larynx_infiltration_suprahyoid_epiglottis_MRI_neck__patient", "larynx_infiltration_suprahyoid_epiglottis_MRI_neck__patient", "false", "false"]
+194
+["194", "larynx_infiltration_suprahyoid_epiglottis_endoscopy__patient", "larynx_infiltration_suprahyoid_epiglottis_endoscopy__patient", "false", "false"]
+195
+["195", "larynx_function_vocal_fold_dyspnea__patient", "larynx_function_vocal_fold_dyspnea__patient", "false", "false"]
+196
+["196", "larynx_function_vocal_fold_stroboscopy__patient", "larynx_function_vocal_fold_stroboscopy__patient", "false", "false"]
+197
+["197", "larynx_function_vocal_fold_clinical_examination__patient", "larynx_function_vocal_fold_clinical_examination__patient", "false", "false"]
+198
+["198", "larynx_infiltration_vestibular_fold_CT_neck__patient", "larynx_infiltration_vestibular_fold_CT_neck__patient", "false", "false"]
+199
+["199", "larynx_infiltration_vestibular_fold_endoscopy__patient", "larynx_infiltration_vestibular_fold_endoscopy__patient", "false", "false"][200 … 299]
+200
+["200", "larynx_infiltration_vestibular_fold_PET_neck__patient", "larynx_infiltration_vestibular_fold_PET_neck__patient", "false", "false"]
+201
+["201", "larynx_infiltration_vestibular_fold_function__patient", "larynx_infiltration_vestibular_fold_function__patient", "false", "false"]
+202
+["202", "larynx_infiltration_vestibular_fold_MRI_neck__patient", "larynx_infiltration_vestibular_fold_MRI_neck__patient", "false", "false"]
+203
+["203", "larynx_infiltration_vestibular_fold_patho__patient", "larynx_infiltration_vestibular_fold_patho__patient", "false", "false"]
+204
+["204", "larynx_infiltration_vestibular_fold_intra_OP__patient", "larynx_infiltration_vestibular_fold_intra_OP__patient", "false", "false"]
+205
+["205", "larynx_infiltration_paraepiglottic_space_intra_OP__patient", "larynx_infiltration_paraepiglottic_space_intra_OP__patient", "false", "false"]
+206
+["206", "larynx_infiltration_paraepiglottic_space_function__patient", "larynx_infiltration_paraepiglottic_space_function__patient", "false", "false"]
+207
+["207", "larynx_infiltration_paraepiglottic_space_MRI_neck__patient", "larynx_infiltration_paraepiglottic_space_MRI_neck__patient", "false", "false"]
+208
+["208", "larynx_infiltration_paraepiglottic_space_Sono_neck__patient", "larynx_infiltration_paraepiglottic_space_Sono_neck__patient", "false", "false"]
+209
+["209", "larynx_infiltration_paraepiglottic_space_patho__patient", "larynx_infiltration_paraepiglottic_space_patho__patient", "false", "false"]
+210
+["210", "larynx_infiltration_paraepiglottic_space_PET_neck__patient", "larynx_infiltration_paraepiglottic_space_PET_neck__patient", "false", "false"]
+211
+["211", "larynx_infiltration_paraepiglottic_space_CT_neck__patient", "larynx_infiltration_paraepiglottic_space_CT_neck__patient", "false", "false"]
+212
+["212", "larynx_infiltration_vocal_fold_endoscopy__patient", "larynx_infiltration_vocal_fold_endoscopy__patient", "false", "false"]
+213
+["213", "larynx_infiltration_vocal_fold_clinical_examination__patient", "larynx_infiltration_vocal_fold_clinical_examination__patient", "false", "false"]
+214
+["214", "larynx_infiltration_vocal_fold_patho__patient", "larynx_infiltration_vocal_fold_patho__patient", "false", "false"]
+215
+["215", "larynx_infiltration_vocal_fold_CT_neck__patient", "larynx_infiltration_vocal_fold_CT_neck__patient", "false", "false"]
+216
+["216", "larynx_infiltration_vocal_fold_MRI_neck__patient", "larynx_infiltration_vocal_fold_MRI_neck__patient", "false", "false"]
+217
+["217", "larynx_infiltration_vocal_fold_intra_OP__patient", "larynx_infiltration_vocal_fold_intra_OP__patient", "false", "false"]
+218
+["218", "larynx_infiltration_vocal_fold_Sono_neck__patient", "larynx_infiltration_vocal_fold_Sono_neck__patient", "false", "false"]
+219
+["219", "T3_criteria__patient", "T3_criteria__patient", "false", "false"]
+220
+["220", "larynx_T_state__patient", "larynx_T_state__patient", "false", "false"]
+221
+["221", "larynx_tumor_side_endoscopy__patient", "larynx_tumor_side_endoscopy__patient", "false", "false"]
+222
+["222", "larynx_tumor_side_clinical_exam_neck__patient", "larynx_tumor_side_clinical_exam_neck__patient", "false", "false"]
+223
+["223", "larynx_tumor_side_CT_neck__patient", "larynx_tumor_side_CT_neck__patient", "false", "false"]
+224
+["224", "larynx_tumor_side_Sono_neck__patient", "larynx_tumor_side_Sono_neck__patient", "false", "false"]
+225
+["225", "larynx_tumor_side_patho__patient", "larynx_tumor_side_patho__patient", "false", "false"]
+226
+["226", "larynx_tumor_side_MRT_neck__patient", "larynx_tumor_side_MRT_neck__patient", "false", "false"]
+227
+["227", "larynx_tumor_side_PET_neck__patient", "larynx_tumor_side_PET_neck__patient", "false", "false"]
+228
+["228", "N_size__patient", "N_size__patient", "false", "false"]
+229
+["229", "N_position__patient", "N_position__patient", "false", "false"]
+230
+["230", "bone_M__patient", "bone_M__patient", "false", "false"]
+231
+["231", "peritoneum_M__patient", "peritoneum_M__patient", "false", "false"]
+232
+["232", "skin_M__patient", "skin_M__patient", "false", "false"]
+233
+["233", "hepar_M__patient", "hepar_M__patient", "false", "false"]
+234
+["234", "distant_lymphnode_M__patient", "distant_lymphnode_M__patient", "false", "false"]
+235
+["235", "N_positive_size_palpation__patient", "N_positive_size_palpation__patient", "false", "false"]
+236
+["236", "N_positive_size_MRI_neck__patient", "N_positive_size_MRI_neck__patient", "false", "false"]
+237
+["237", "N_positive_size_PET_neck__patient", "N_positive_size_PET_neck__patient", "false", "false"]
+238
+["238", "N_positive_size_patho__patient", "N_positive_size_patho__patient", "false", "false"]
+239
+["239", "N_positive_size_CT_neck__patient", "N_positive_size_CT_neck__patient", "false", "false"]
+240
+["240", "N_positive_size_sono__patient", "N_positive_size_sono__patient", "false", "false"]
+241
+["241", "N_positive_side_palpation__patient", "N_positive_side_palpation__patient", "false", "false"]
+242
+["242", "N_positive_side_PET_neck__patient", "N_positive_side_PET_neck__patient", "false", "false"]
+243
+["243", "N_positive_side_CT_neck__patient", "N_positive_side_CT_neck__patient", "false", "false"]
+244
+["244", "N_positive_side_MRI_neck__patient", "N_positive_side_MRI_neck__patient", "false", "false"]
+245
+["245", "N_positive_side_sono__patient", "N_positive_side_sono__patient", "false", "false"]
+246
+["246", "N_positive_side_patho__patient", "N_positive_side_patho__patient", "false", "false"]
+247
+["247", "bone_M_PET_body__patient", "bone_M_PET_body__patient", "false", "false"]
+248
+["248", "bone_M_Scinti__patient", "bone_M_Scinti__patient", "false", "false"]
+249
+["249", "bone_M_CT_body__patient", "bone_M_CT_body__patient", "false", "false"]
+250
+["250", "bone_M_fracture__patient", "bone_M_fracture__patient", "false", "false"]
+251
+["251", "perit_M_CT_abdomen__patient", "perit_M_CT_abdomen__patient", "false", "false"]
+252
+["252", "perit_M_Sono_abdomen__patient", "perit_M_Sono_abdomen__patient", "false", "false"]
+253
+["253", "others_M_Sono_abdomen__patient", "others_M_Sono_abdomen__patient", "false", "false"]
+254
+["254", "others_M_CT_abdomen__patient", "others_M_CT_abdomen__patient", "false", "false"]
+255
+["255", "hep_M_CT_abdomen__patient", "hep_M_CT_abdomen__patient", "false", "false"]
+256
+["256", "hep_M_Sono_abdomen__patient", "hep_M_Sono_abdomen__patient", "false", "false"]
+257
+["257", "hep_M_CT_GuidedPunction__patient", "hep_M_CT_GuidedPunction__patient", "false", "false"]
+258
+["258", "hep_M_Sono_GuidedPunction__patient", "hep_M_Sono_GuidedPunction__patient", "false", "false"]
+259
+["259", "distant_lymphnode_PET_thorax__patient", "distant_lymphnode_PET_thorax__patient", "false", "false"]
+260
+["260", "distant_lymphnode_CR_thorax__patient", "distant_lymphnode_CR_thorax__patient", "false", "false"]
+261
+["261", "distant_lymphnode_endosono__patient", "distant_lymphnode_endosono__patient", "false", "false"]
+262
+["262", "distant_lymphnode_CT_thorax__patient", "distant_lymphnode_CT_thorax__patient", "false", "false"]
+263
+["263", "N_state__patient", "N_state__patient", "false", "false"]
+264
+["264", "pulmonary_M__patient", "pulmonary_M__patient", "false", "false"]
+265
+["265", "pleura_M__patient", "pleura_M__patient", "false", "false"]
+266
+["266", "brain_M__patient", "brain_M__patient", "false", "false"]
+267
+["267", "bonemarrow_M__patient", "bonemarrow_M__patient", "false", "false"]
+268
+["268", "pul_M_CR_thorax__patient", "pul_M_CR_thorax__patient", "false", "false"]
+269
+["269", "pul_M_CT_thorax__patient", "pul_M_CT_thorax__patient", "false", "false"]
+270
+["270", "pul_M_PET_thorax__patient", "pul_M_PET_thorax__patient", "false", "false"]
+271
+["271", "pul_M_bronchoscopy__patient", "pul_M_bronchoscopy__patient", "false", "false"]
+272
+["272", "pulmonary_M_CT_GuidedPunction__patient", "pulmonary_M_CT_GuidedPunction__patient", "false", "false"]
+273
+["273", "pulmonary_M_bronchoscopy_GuidedPunction__patient", "pulmonary_M_bronchoscopy_GuidedPunction__patient", "false", "false"]
+274
+["274", "pleu_M_CR_thorax__patient", "pleu_M_CR_thorax__patient", "false", "false"]
+275
+["275", "pleu_M_PET_thorax__patient", "pleu_M_PET_thorax__patient", "false", "false"]
+276
+["276", "pleu_M_CT_thorax__patient", "pleu_M_CT_thorax__patient", "false", "false"]
+277
+["277", "brain_M_cMRT__patient", "brain_M_cMRT__patient", "false", "false"]
+278
+["278", "brain_M_cCT__patient", "brain_M_cCT__patient", "false", "false"]
+279
+["279", "brain_M_PET__patient", "brain_M_PET__patient", "false", "false"]
+280
+["280", "bm_M_PET_body__patient", "bm_M_PET_body__patient", "false", "false"]
+281
+["281", "bm_M_CR_body__patient", "bm_M_CR_body__patient", "false", "false"]
+282
+["282", "bm_M_Scinti__patient", "bm_M_Scinti__patient", "false", "false"]
+283
+["283", "bm_M_CT_body__patient", "bm_M_CT_body__patient", "false", "false"]
+284
+["284", "M_state__patient", "M_state__patient", "false", "false"]
+285
+["285", "UICC_stage__patient", "UICC_stage__patient", "false", "false"]
+286
+["286", "N_count_CT_neck__patient", "N_count_CT_neck__patient", "false", "false"]
+287
+["287", "N_count_MRI_neck__patient", "N_count_MRI_neck__patient", "false", "false"]
+288
+["288", "N_count_PET_neck__patient", "N_count_PET_neck__patient", "false", "false"]
+289
+["289", "pleu_M_guidedPunction__patient", "pleu_M_guidedPunction__patient", "false", "false"]
+290
+["290", "larynx_infiltration_postcricoid_area_endoscopy__patient", "larynx_infiltration_postcricoid_area_endoscopy__patient", "false", "false"]
+291
+["291", "larynx_infiltration_pre_epiglottic_space_endoscopy__patient", "larynx_infiltration_pre_epiglottic_space_endoscopy__patient", "false", "false"]
+292
+["292", "larynx_infiltration_paraepiglottic_space_endoscopy__patient", "larynx_infiltration_paraepiglottic_space_endoscopy__patient", "false", "false"]
+293
+["293", "larynx_infiltration_thyroid_cartilage_endoscopy__patient", "larynx_infiltration_thyroid_cartilage_endoscopy__patient", "false", "false"]
+294
+["294", "larynx_tumor_type_pathohisto__patient", "larynx_tumor_type_pathohisto__patient", "false", "false"]
+295
+["295", "larynx_tumor_size_MRT_neck__patient", "larynx_tumor_size_MRT_neck__patient", "false", "false"]
+296
+["296", "larynx_tumor_size_Sono_neck__patient", "larynx_tumor_size_Sono_neck__patient", "false", "false"]
+297
+["297", "larynx_tumor_size_CT_neck__patient", "larynx_tumor_size_CT_neck__patient", "false", "false"]
+298
+["298", "larynx_tumor_size_endoscopy__patient", "larynx_tumor_size_endoscopy__patient", "false", "false"]
+299
+["299", "larynx_tumor_size_PET_neck__patient", "larynx_tumor_size_PET_neck__patient", "false", "false"][300 … 301]
+300
+["300", "larynx_tumor_size_clinical_examination__patient", "larynx_tumor_size_clinical_examination__patient", "false", "false"]
+301
+["301", "larynx_tumor_size_patho__patient", "larynx_tumor_size_patho__patient", "false", "false"]
+length
+
+302
+__proto__
+
+Array(0)

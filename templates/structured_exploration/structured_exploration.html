@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+
+    <script src="strings.js" type="text/javascript"></script>
+    <script src="global_variables.js" type="text/javascript"></script>
+
+
+    <!--<script data-require="d3@*" data-server="4.0.0" src="https://d3js.org/d3.v4.min.js" charset="UTF-8"></script>-->
+    <script src="libraries/d3.v4.min.js" charset="UTF-8"></script>
+    <script src="libraries/angular_1.0.4.js"></script>
+    <link href="libraries/Fira_Sans.css" rel="stylesheet">
+
+    <!--to get the information from hans georg-->
+    <script src="libraries/jquery_3.2.1.js"></script>
+
+    <script src="libraries/interact_v1.3.3.min.js"></script>
+
+    <link href="libraries/Roboto.css" rel="stylesheet"> <!-- used font -->
+
+
+    <script src="model/getValuesFromGenie/global_variables_model.js" type="text/javascript"></script>
+
+    <script src="model/getValuesFromGenie/get_bn_information.js" type="text/javascript"></script>
+
+
+    <script src="view/create_donut.js" type="text/javascript"></script>
+    <script src="view/layout_calculator.js" type="text/javascript"></script>
+    <script src="view/rotation_animation.js" type="text/javascript"></script>
+    <script src="view/create_all_states_view.js" type="text/javascript"></script>
+    <script src="view/animate_divs.js" type="text/javascript"></script>
+    <script src="view/create_and_animate_lines.js" type="text/javascript"></script>
+
+    <script src="controller/create_graphics_controller.js" type="text/javascript"></script>
+    <script src="controller/update_to_network_controller.js" type="text/javascript"></script>
+    <script src="controller/get_information_from_bn_controller.js" type="text/javascript"></script>
+    <script src="controller/icons_controller.js" type="text/javascript"></script>
+    <script src="controller/set_animation_duration_is_over.js" type="text/javascript"></script>
+    <script src="controller/create_chart.js" type="text/javascript"></script>
+
+    <script src="controller/right_click_methods/right_click_behavior.js" type="text/javascript"></script>
+    <script src="controller/right_click_methods/open_in_new_window.js" type="text/javascript"></script>
+    <script src="controller/right_click_methods/set_evidence.js" type="text/javascript"></script>
+    <script src="controller/right_click_methods/d3-context-menu.js" type="text/javascript"></script>
+
+
+    <!-- only highly important view-->
+    <script src="view/only_important_view/rotation_animation_whole_chart.js" type="text/javascript"></script>
+    <script src="view/only_important_view/model_to_visualize.js" type="text/javascript"></script>
+    <script src="view/only_important_view/rotation_animation_most_important.js" type="text/javascript"></script>
+    <script src="view/get_chart_div_id.js" type="text/javascript"></script>
+
+    <script src="view/interact_js_methods.js" type="text/javascript"></script>
+
+    <script src="node_states_therapy.js" type="text/javascript"></script>
+
+    <script src="libraries/slider/slider.js" type="text/javascript"></script>
+    <script src="lookuptable_node_names.js" type="text/javascript"></script>
+    <script src="controller/tooltip_behavior.js" type="text/javascript"></script>
+    <script src="view/legend.js" type="text/javascript"></script>
+    <script src="libraries/textures.js" type="text/javascript"></script>
+
+</head>
+
+<link rel="stylesheet" href="style_structured_exploration.css">
+<link rel="stylesheet" href="libraries/slider/slider.css">
+<link rel="stylesheet" href="controller/right_click_methods/contextmenu.css">
+
+
+<!--disable right click on chart-->
+<!--<body oncontextmenu="return false;">-->
+<div id="whole_view" class="whole_view">
+    <div id = "legend" class = 'legend'></div>
+</div>
+
+<script>
+    //initialize window resizer
+    //window.addEventListener("resize", window_resize_function);
+    //window_resize_function();
+
+    //var window_width = window.innerWidth - 2 * margin_divs;
+    //var window_height = window.innerHeight - 2 * margin_divs;
+
+
+    // readout json file with patient information
+    // just for testing
+
+    //initializeBN(function (response) {
+
+
+         callNodeList(function (callback_response) {
+        //     //console.log(callback_response)
+         });
+
+        /*var all_outcome_node_ids_real = ["UICC_stage__patient", "larynx_T_state__patient", "N_state__patient", "M_state__patient"];
+        var currently_selected_outcome_node_id;
+        get_all_targets_new(function (all_outcome_nodes) {
+
+            var all_outcome_nodes_formatted = [];
+            for (var i = 0; i < all_outcome_nodes.length; i++) {
+                all_outcome_nodes_formatted[i] = {
+                    node_id: all_outcome_nodes[i].id,
+                    node_label: all_outcome_nodes[i].name,
+                    isObserved: all_outcome_nodes[i].isObserved,
+                    states: []
+                };
+
+                for (var j = 0; j < all_outcome_nodes[i].states[0].length; j++) {
+                    all_outcome_nodes_formatted[i].states[j] = {
+                        state: all_outcome_nodes[i].states[0][j].name,
+                        probability: all_outcome_nodes[i].states[0][j].probability
+                    }
+                }
+            }
+
+            //if (currently_selected_outcome_node_id === undefined) {
+                currently_selected_outcome_node_id = all_outcome_nodes_formatted[0].node_id;
+            //}
+
+            var outcome_node = all_outcome_nodes_formatted.filter(function (e) {
+                return e.node_id === currently_selected_outcome_node_id;
+            });
+            outcome_node = outcome_node[0];
+
+            //get_all_evidences_for_outcome(function (evidences) {
+            get_influence_of_evidences_on_target(function (evidences) {
+                console.log(evidences)
+                //callback(all_outcome_nodes_formatted, outcome_node, evidences);
+                //}, outcome_node);
+                //}
+            }, [currently_selected_outcome_node_id]);
+
+
+        }, all_outcome_node_ids_real);*/
+
+
+        var url = new URL(window.location.href);
+
+        //current_node_id = "Phase"; // menstrual phase
+        //current_node_id = "UICC_stage__patient"; // HNO
+        current_node_id = "Therapy"; // endom cancer
+
+        if (url.searchParams.get("node") !== null) {
+            current_node_id = url.searchParams.get("node");
+        }
+
+
+        // set net name, patient id, net version, username and password
+        //set_netName_patientID_netVersion_username_password(net_name, patient_id, net_version, username, password);
+
+        create_chart_div(div_id_chart.substring(1));
+        create_legend(div_id_chart.substring(1));
+
+
+        //create_chart_div(div_id_chart.substring(1), 500, 500);
+        //create_chart_div(div_id_chart.substring(1) + '2', 500, 500);
+
+
+/*        get_all_targets_new(function (response) {
+
+        }, target_variables);*/
+        // resize of window listener
+        function window_resize_function() {
+
+            // get inner width and height of window, remove 2 times margin divs to get the right size
+            /*chart_width = window.innerWidth - 2 * margin_divs;
+            chart_height = window.innerHeight - 2 * margin_divs;
+
+            parents_height = chart_height / 4;
+            current_node_height = chart_height / 2;
+            children_height = chart_height / 4;
+
+            // set width and height related to window size
+            d3.select(div_id_chart)
+                .style("width", parseFloat(d3.select('#' + div_id_chart).style('width')) + "px")
+                .style("height", parseFloat(d3.select('#' + div_id_chart).style('height')) + "px");
+
+            d3.select(div_id_chart).selectAll('*').remove();
+
+            if (current_node_properties.length !== 0) {
+                create_graphics_of_node(current_node_properties);
+            }*/
+
+        }
+
+
+        create_interact_js_methods();
+    //});
+
+
+</script>
+</body>
+
+</html>

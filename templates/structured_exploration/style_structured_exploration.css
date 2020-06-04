@@ -1,0 +1,281 @@
+
+
+:root {
+    --element-background-color: white;
+    /*--element-background-color: #444168;*/
+    --main-background-color: lightsteelblue;
+    --main-font-color: #444168;
+    --time-line-outcome-height: 200px;
+    --plot-width: 960px;
+    --padding: 5px;
+    --min_height: 500px;
+    --main-foreground-color:steelblue;
+    --main-margin: 10px;
+    --navbar-font-color: white;
+    --navbar-highlight-font-color: #7da7ca;
+    --main-font-weight: 300;
+    --highlight-font-weight: 700;
+    --legend-height: 110px;
+}
+
+body {
+    background-color: var(--element-background-color);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+}
+
+#body2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 800px;
+    background-color: var(--element-background-color);
+    float: left;
+}
+
+.whole_view {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-weight: 100;
+    background-color: #818181; /*#191826;*/
+}
+
+.chart {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+    float: left;
+    width: 100%;
+    /*width: 1017px;*/
+    /*flex: 1 1 auto;*/
+    /*height: 100%;*/
+    height: 700px;
+    overflow: hidden;
+    font-weight: 100;
+    background-color: var(--element-background-color);
+}
+
+.view_element {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+    float: left;
+    width: 100%;
+    /*width: 1017px;
+    height: 700px; */
+    height: calc(100% - var(--legend-height));
+    overflow: hidden;
+    font-weight: 100;
+    background-color: var(--element-background-color);
+    border: white solid 2px;
+}
+
+.icons {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: 0;
+    float: left;
+    /*width: 100%;*/
+    width: 100%;
+    height: 40px;
+    max-height: 40px;
+    overflow: hidden;
+    font-weight: 100;
+    background-color: var(--element-background-color);
+}
+
+.buttons {
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: right;
+    padding: 5px;
+}
+
+.mode_text {
+    z-index: 1;
+    width: 150px;
+    height: 30px;
+    position: relative;
+    float: left;
+    padding: 5px;
+}
+
+
+.tooltip {
+    box-shadow: 0 0 5px #ccffff; /*#999999;*/
+    display: none;
+    font-size: 12px;
+    left: 130px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 95px;
+    width: 80px;
+    z-index: 10;
+    line-height: 140%; /*Interlineado*/
+    font-weight: 300;
+    background: #4c4c4c;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.rotation_button {
+    z-index: 20;
+    width: 100px;
+    height: 20px;
+}
+
+.label {
+    font-weight: 600;
+}
+
+polyline{
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+
+/*************************************************Canvas Menue********************************/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    background-color: var(--element-background-color);
+    padding-top: 60px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#canvas_list_div{
+    overflow-y: auto;
+}
+
+#sidenav_content {
+    height: 100%;
+    width: 100%;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+#node_name_input_box {
+    background-image: url('icons/searchpng.png');
+    background-position: 12px 12px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+
+#list_of_all_nodes {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#list_of_all_nodes li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #d1d0d3;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+#list_of_all_nodes li a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/********************************************** tree *******************************/
+
+.node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+}
+
+.node text {
+    font: 12px sans-serif;
+    fill: #fff;
+}
+
+.node--internal text {
+    /*text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;*/
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+
+.line_path {
+    stroke: var(--main-font-color);
+}
+
+
+
+.legend {
+    box-sizing: border-box;
+    display: inline-block;
+    /*position: relative;*/
+    /*left: 0px;*/
+    bottom: 0px;
+    position: absolute;
+    left: 0;
+    float: left;
+    /*width: 1017px;*/
+    /*width: 1017px;*/
+    /*height: 700px;*/
+    width: 100%;
+    height: var(--legend-height);
+    /*max-width: 1920px;
+    max-height: 1080px;*/
+    overflow: hidden;
+    background-color: var(--main-background-color); /*#191826;*/
+    padding: 0px 20px 0px 20px;
+    fill: var(--main-font-color);
+    /*border: white solid 2px;*/
+}

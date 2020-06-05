@@ -83,13 +83,13 @@ function create_text_pie(current_node, div_for_text_pie, dont_show_node_label) {
             return max_state.state + ': ' + (max_state.probability * 100).toFixed(1)  + '%';
         });
 
-    div_for_text_pie.select('svg').selectAll('text')
-        .on('mousemove', function () {
-            show_tool_tip_pie(current_node);
-        })
-        .on('mouseout', function () {
-            hide_tool_tip();
-        });
+    // div_for_text_pie.select('svg').selectAll('text')
+    //     .on('mousemove', function () {
+    //         show_tool_tip_pie(current_node);
+    //     })
+    //     .on('mouseout', function () {
+    //         hide_tool_tip();
+    //     });
 }
 
 const splitter = "___";

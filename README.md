@@ -8,7 +8,7 @@ The application can be seen in the following figure.
 To run the application you need to do following steps:
 
 - [ ] clone the github repository. URL: https://github.com/JulianeMu/explainable_cdss_for_therapy_planning.git
-- [ ] create a BayesFusion account (https://www.bayesfusion.com/) and download the python 3.7 wrapper for SMILE. 
+- [ ] create a BayesFusion account (https://www.bayesfusion.com/) and download the python 3.7 wrapper for SMILE. (**free for academia**)
   - MacOS: pysmile-1.5.0-macosx-python-3.7-academic.tar.gz
   - Windows systems: pysmile-1.5.0-win-x64-python-3.7-academic.zip
   - Linux: pysmile-1.5.0-linux-x64-python-3.7-academic.tar.gz

@@ -17,8 +17,8 @@ To run the application you need to do following steps:
 ![pysmile](images/pysmile.png?raw=true "Title")
 - [ ] open the project in a development environment
 - [ ] install all required python packages **except for pysmile**. We want to use our locally added one and not the one provided by python
-- [ ] run the **app.py**
-- [ ] run the **index.html** (located in the templates folder)
+- [ ] run the **app.py** using your development environment
+- [ ] run the **index.html** (located in the templates folder). To avoid CORS erros, you have to either use your preferred development environment to run the *index.html* or navigate inside the templates folder in your terminal and run `python -m SimpleHTTPServer`
 - [ ] have fun using our visual approach :) 
 
 # Acknowledgements

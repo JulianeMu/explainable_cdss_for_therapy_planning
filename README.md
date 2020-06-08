@@ -16,7 +16,7 @@ To run the application you need to do following steps:
 - [ ] add the **pysmile wrapper**, e.g., pysmile.so for MacOS, and **pysmile_license.py** to the project like this:
 ![pysmile](images/pysmile.png?raw=true "Title")
 - [ ] open the project in a development environment
-- [ ] install all required python packages
+- [ ] install all required python packages **except for pysmile**. We want to use our locally added one and not the one provided by python
 - [ ] run the **app.py**
 - [ ] run the **index.html** (located in the templates folder)
 - [ ] have fun using our visual approach :) 

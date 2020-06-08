@@ -141,10 +141,10 @@ function highlight_currently_selected_outcome_node(all_outcome_nodes, currently_
 
         var outer_radius = Math.min(parseFloat(d3.select('#' + all_outcome_nodes[i].node_id + outcome_node_div_ending).select('svg').style('width')), parseFloat(d3.select('#' + all_outcome_nodes[i].node_id + outcome_node_div_ending).select('svg').style('height'))) / 2 - 40;
         var outer_radius_old = outer_radius;
-        if (all_outcome_nodes[i].node_id === currently_selected_outcome_node) {
+        //if (all_outcome_nodes[i].node_id === currently_selected_outcome_node) {
             outer_radius = outer_radius + 20;
             d3.select('#' + currently_selected_outcome_node_id + outcome_node_div_ending).style('background-color', '#EAF0F6');
-        }
+        //}
 
         //d3.select('#' + currently_selected_outcome_node_id + outcome_node_div_ending);
         //background-color

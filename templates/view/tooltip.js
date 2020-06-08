@@ -288,7 +288,7 @@ function show_tool_tip_pie(current_node) {
     var style = getComputedStyle(d3.select(bar_chart_evidences_div_id).node());
 
     const padding_left = 15;
-    const padding_top = 25;
+    let padding_top = 25;
 
     let padding_between = 100;
     for (let s_index_helper = 0; s_index_helper < current_node.states[0].length; s_index_helper++) {
@@ -304,6 +304,18 @@ function show_tool_tip_pie(current_node) {
     let max_y_size = 0;
     let max_x_size = 0;
 
+    console.log(current_node)
+    tooltip_div.select('svg').append('text')
+        .attr('text-anchor', 'start')
+        .attr('transform', 'translate(' + padding_left + ', ' + padding_top + ')')
+        .style('font-weight', 800)
+        .style("font-size", 16)
+        .text(current_node.node_label)
+        .style('fill', style.getPropertyValue('--main-font-color'))
+        .style('font-weight', style.getPropertyValue("--highlight-font-weight"));
+
+    max_x_size = current_node.node_label.length * 10;
+    padding_top = 35;
 
     for (let index = 0; index < current_node.states.length; index++) {
         for (let states_index = 0; states_index < current_node.states[0].length; states_index++) {
@@ -311,8 +323,8 @@ function show_tool_tip_pie(current_node) {
 
                 tooltip_div.select('svg').append('text')
                     .attr('text-anchor', 'start')
-                    .attr('transform', 'translate(' + padding_left + ', ' + (states_index * 25 + padding_top) + ')')
-                    .style('font-weight', 'bold')
+                    .attr('transform', 'translate(' + padding_left + ', ' + ((states_index+1) * 25 + padding_top) + ')')
+                    .style('font-weight', 300)
                     .style("font-size", 16)
                     .text(current_node.states[0][states_index].state)
                     .style('fill', style.getPropertyValue('--main-font-color'))
@@ -327,8 +339,8 @@ function show_tool_tip_pie(current_node) {
 
             tooltip_div.select('svg').append('text')
                 .attr('text-anchor', 'end')
-                .attr('transform', 'translate(' + add_padding_between + ', ' + (states_index * 25 + padding_top) + ')')
-                .style('font-weight', 'bold')
+                .attr('transform', 'translate(' + add_padding_between + ', ' + ((states_index+1) * 25 + padding_top) + ')')
+                .style('font-weight', 300)
                 .style("font-size", 16)
                 .text((current_node.states[index][states_index].probability * 100).toFixed(1) + '%')
                 .style('fill', style.getPropertyValue('--main-font-color'))
@@ -365,10 +377,10 @@ function show_tool_tip_pie(current_node) {
                 .style('width', 10)
                 .style('height', 10)
                 .style('fill', color(states_index))
-                .attr('transform', 'translate(' + (add_padding_between + 10) + ', ' + (states_index * 25 + padding_top - 10) + ')');
+                .attr('transform', 'translate(' + (add_padding_between + 10) + ', ' + ((states_index+1) * 25 + padding_top - 10) + ')');
 
-            if (max_y_size < states_index * 25 + padding_top - 10) {
-                max_y_size = states_index * 25 + padding_top - 10;
+            if (max_y_size < (states_index+1) * 25 + padding_top - 10) {
+                max_y_size = (states_index+1) * 25 + padding_top - 10;
             }
 
             if (max_x_size < add_padding_between + 20) {
@@ -378,11 +390,11 @@ function show_tool_tip_pie(current_node) {
     }
 
     tooltip_div.style('width', (max_x_size + padding_left) + 'px')
-        .style('height', (max_y_size + padding_top) + 'px');
+        .style('height', (max_y_size + padding_top-10) + 'px');
 
     tooltip_div.select('svg')
         .style('width', (max_x_size + padding_left))
-        .style('height', max_y_size + padding_top);
+        .style('height', max_y_size + padding_top -10);
 
     tooltip_div
         .style("top", (d3.event.pageY) - parseFloat(tooltip_div.style('height')) - 20 + "px");

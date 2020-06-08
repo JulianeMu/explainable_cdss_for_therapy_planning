@@ -34,7 +34,6 @@ function get_all_information_of_selected_node(callback, current_node_id, calcula
 
         create_parents_children_for_node(function (response) {
 
-            console.log(current_node_id)
             response = calculate_layout_of_nodes(response, div_id_chart);
             callback(response);
         }, current_node, calculated_node_objects, div_id_chart);

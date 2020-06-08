@@ -3,8 +3,6 @@
  */
 function calculate_layout_of_nodes(node_types, div_id_chart) {
 
-
-    console.log(node_types)
     for (var index_node_types = 0; index_node_types < node_types.length; index_node_types ++) {
 
 

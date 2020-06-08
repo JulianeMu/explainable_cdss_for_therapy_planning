@@ -11,23 +11,23 @@ function show_tooltip(node_state, current_prob, last_prob, element, change_opaci
 
     tooltip.select('svg').selectAll("*").remove();
 
+    let style = getComputedStyle(d3.select(div_id_chart).node());
+
     const font_size = 18;
 
     var tooltip_padding = 10;
 
     let node_label_text = tooltip.select('svg').append('text')
-        .attr('font-size', font_size-4 + 'px')
         .attr('alignment-baseline', 'central')
         .text(node_state)
         .attr('text-anchor', 'start')
         .attr('transform', 'translate('+ tooltip_padding+ ',' + (15)  + ')')
-        .style('fill', 'white')
+        .style('fill', style.getPropertyValue('--main-font-color'))
         .style('font-weight', 700);
 
     let max_width = 2 * tooltip_padding + node_label_text.node().getComputedTextLength();
 
     var text_max_state_before = tooltip.select('svg').append('text')
-        .attr('font-size', font_size-4 + 'px')
         .attr('alignment-baseline', 'central')
         .text(function() {
             if (last_prob) {
@@ -37,8 +37,9 @@ function show_tooltip(node_state, current_prob, last_prob, element, change_opaci
         })
         .attr('text-anchor', 'start')
         .attr('transform', 'translate('+ tooltip_padding+ ',' + (40)  + ')')
-        .style('fill', 'white')
-    //.style('font-weight', style.getPropertyValue("--highlight-font-weight"));
+        .style('fill', style.getPropertyValue('--main-font-color'))
+        .style('font-weight', 700);
+
 
     max_width = 2 * tooltip_padding + text_max_state_before.node().getComputedTextLength() > max_width ? 2 * tooltip_padding + text_max_state_before.node().getComputedTextLength() : max_width;
 
@@ -68,19 +69,18 @@ function show_tooltip(node_state, current_prob, last_prob, element, change_opaci
 
         var lineGraph = tooltip.select('svg').append("path")
             .attr("d", lineFunction(lineData))
-            .attr("stroke", 'white')//style.getPropertyValue('--main-font-color'))
+            .attr("stroke", style.getPropertyValue('--main-font-color'))//style.getPropertyValue('--main-font-color'))
             .attr("stroke-width", 1)
             .attr("fill", "none");
 
 
         var text_max_state_after = tooltip.select('svg').append('text')
-            .attr('font-size', font_size - 4 + 'px')
             .attr('alignment-baseline', 'central')
             .text((parseFloat(current_prob) * 100).toFixed(1) + "%")
             .attr('text-anchor', 'start')
             .attr('transform', 'translate(' + (tooltip_padding + 50 + arrow_start) + ',' + (40) + ')')
-            .style('fill', 'white')
-        //.style('font-weight', style.getPropertyValue("--highlight-font-weight"));
+            .style('fill', style.getPropertyValue('--main-font-color'))
+            .style('font-weight', 700);
 
         max_width = 2*tooltip_padding + 50 + arrow_start + text_max_state_after.node().getComputedTextLength() > max_width ? 2*tooltip_padding + 50 + arrow_start + text_max_state_after.node().getComputedTextLength() : max_width;
     }

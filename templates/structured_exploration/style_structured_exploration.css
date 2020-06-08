@@ -116,9 +116,7 @@ body {
 
 
 .tooltip {
-    box-shadow: 0 0 5px #ccffff; /*#999999;*/
     display: none;
-    font-size: 12px;
     left: 130px;
     padding: 10px;
     position: absolute;
@@ -126,11 +124,13 @@ body {
     top: 95px;
     width: 80px;
     z-index: 10;
+    font: 16px sans-serif;
+    border-radius: 8px;
     line-height: 140%; /*Interlineado*/
     font-weight: 300;
-    background: #4c4c4c;
-    color: #fff;
-    border-radius: 2px;
+    background: white ; /*#dbe4f0;*/
+    border: 2px solid var(--main-font-color);
+    color: var(--main-font-color);
 }
 
 .rotation_button {

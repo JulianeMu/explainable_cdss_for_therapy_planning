@@ -23,9 +23,6 @@ function animate_divs_on_click(div_id_chart, new_selected_node_id, nodes_in_case
 
         do_not_calculate_again = false;
 
-        console.log(new_selected_node_id)
-        console.log(old_nodes)
-
         nodes_in_case_of_go_home = calculate_layout_of_nodes(nodes_in_case_of_go_home, div_id_chart);
         animate_divs_on_home(nodes_in_case_of_go_home, direction, div_id_chart);
 
@@ -314,9 +311,6 @@ function animate_divs(id, new_object, old_object, div_id_chart) {
                 var result = dataset[0].filter(function (obj) {
                     return parseFloat(obj.probability) === max_value;
                 });
-
-                console.log("fdasjoifjlefwlijgldjsjl")
-                console.log(result[0])
 
                 d3.select('#' + div_id_chart).select(id).select('svg').append("text")
                     .attr('id', 'most_probable_state')

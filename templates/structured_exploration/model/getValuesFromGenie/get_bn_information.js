@@ -94,7 +94,6 @@ function getNodeObjects_with_Virtual_evidences(callback, nodeids) {
         contentType: 'application/json; charset=utf-8',
         data: values,
     }).done(function(response) {
-        console.log(JSON.parse(response))
         callback(JSON.parse(response));
     })
 }

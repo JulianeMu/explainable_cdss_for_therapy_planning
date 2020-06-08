@@ -565,7 +565,6 @@ function add_evidence(parent_id) {
 
     get_all_observable_nodes(function (response) {
 
-        console.log(response)
         let node_list = [];
         for (let i = 0; i < response.length; i++) {
             node_list[i] = lookup_table_get_name_by_id(response[i].node_id);

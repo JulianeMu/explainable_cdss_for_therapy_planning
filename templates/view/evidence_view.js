@@ -833,7 +833,6 @@ function update_bar_chart_plot_by_dropdown_state_relevance(selected_state, evide
     var height_positive = 'calc(100% - ' + axis_height + 'px)';
     var height_negative = '0px';
 
-    console.log(evidences)
     add_update_dropdown_menu_options(evidences[0].relevancies, evidences);
 
     var relevancies_for_updating_state_axis = evidences[0].relevancies;

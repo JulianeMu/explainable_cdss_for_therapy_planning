@@ -24,6 +24,7 @@ body {
     background-color: var(--main-background-color);
     font-family: 'Fira Sans', sans-serif;
     font-weight: var(--main-font-weight);
+    font-size: 16px;
     /*overflow-y: hidden;*/
 }
 
@@ -186,9 +187,9 @@ div.tooltip {
     width: 100px;
     height: 120px;
     padding: 2px;
-    font: 12px sans-serif;
-    background: #dbe4f0;
-    border: 0;
+    font: 16px sans-serif;
+    background: white ; /*#dbe4f0;*/
+    border: 2px solid var(--main-font-color);
     border-radius: 8px;
     pointer-events: none;
     fill: var(--main-font-color);

@@ -117,7 +117,6 @@ function create_donut(current_node, dataset, type, div_chart, boolean_create_cli
         .attr('y', '0.3em')
         .attr('font-weight', 700)
         .text(function (d) {
-            console.log(current_node)
             return current_node.name;
         })
         .attr('transform', function (d) {

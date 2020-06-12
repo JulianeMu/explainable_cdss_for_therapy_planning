@@ -100,9 +100,9 @@ var initial_view = true;
 var color_parent_current_children =
     {
         // blueish, reddish, greenish
-        parent: [['#ccf0f6', "#00373f"], ['#f2d0d0', "#800000"], ['#98FB98', "#228B22"]],
+        parent: [['#b2e9f2', "#006e7f"], ['#f2d0d0', "#800000"], ['#98FB98', "#228B22"]],
         current: [["#b2e9f2", '#006e7f'], ['#f2d0d0', "#800000"], ['#98FB98', "#228B22"]],
-        children: [["#b2e9f2", '#004954'], ['#f2d0d0', "#800000"], ['#98FB98', "#228B22"]]
+        children: [["#b2e9f2", '#006e7f'], ['#f2d0d0', "#800000"], ['#98FB98', "#228B22"]]
     }
 ;
 

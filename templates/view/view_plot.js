@@ -625,7 +625,7 @@ function add_evidence(parent_id) {
 
             let textnode = node_ref.append('a')
                 .attr('href', '#')
-                .text(response[i].node_name)//lookup_table_get_name_by_id(node_list[i]))
+                .text(lookup_table_get_name_by_id(response[i].node_name))//lookup_table_get_name_by_id(node_list[i]))
                 .style('background-color', function () {
                         if (response[i].is_evidence) {
                             return evidence_highlighting_color;

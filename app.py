@@ -22,9 +22,6 @@ start_time = time.time()
 
 app = Flask(__name__)
 
-case_id = "CaseEndomCancer"
-filename = "./resources/TNM_engl.xdsl"
-
 
 # this creates the json object for more complex structures
 def transform(my_object):
@@ -492,7 +489,7 @@ def update_evidences():
 
     for i in range(len(gv.service_evidence_cases.cases)):
 
-        if gv.service_evidence_cases.cases[i].attributes['name'].value == case_id:
+        if gv.service_evidence_cases.cases[i].attributes['name'].value == gv.evidence_case:
             used_case = gv.service_evidence_cases.cases[i]
 
     try:

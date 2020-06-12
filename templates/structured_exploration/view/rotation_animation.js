@@ -147,7 +147,7 @@ function rotate_forward_currentNode(id, dataset, type, div_id_chart) {
 
 function rotate_backwards_currentNode(id, dataset, type, div_id_chart) {
     d3.select('#' + div_id_chart).select('#' + type.type).selectAll("path")
-        .attr('opacity', 0.8)
+        .attr('opacity', 0.9)
         .on('mouseover', function (d) {
             show_tooltip(d.data.name + ": " + (parseFloat(d.data.probability) * 100).toFixed(1) + "%", this, true);
         })

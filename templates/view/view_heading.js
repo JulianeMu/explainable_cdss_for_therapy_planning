@@ -18,7 +18,11 @@ function initialize_heading() {
         //.style('position', 'absolute');
 
     var data = [];
+    // endom cancer
     data.push({sap_id: 'CaseEndomCancer'}, {sap_id: 'CaseEndomCancer2'});
+
+    // HNO
+    //data.push({sap_id: 'Case0001'}, {sap_id: 'Case0002'}, {sap_id: 'Case0003'}, {sap_id: 'Case0004'});
 
 
     var options2 = d3.select("#dropdown_menu_sap_id").selectAll("option")

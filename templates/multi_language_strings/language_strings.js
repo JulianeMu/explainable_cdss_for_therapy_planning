@@ -16,7 +16,10 @@ function get_language__label_by_id(id) {
     });
 
     if (result.length === 0) {
-        return id;
+
+        id = id.replaceAll('larynx_', '');
+        id = id.replaceAll('_patient', '');
+        return id.replaceAll('_', ' ');
     } else {
 
         if (current_language === language_eng) {

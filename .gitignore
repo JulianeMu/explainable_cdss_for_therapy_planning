@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 /pysmile_license.py
 /.idea/
+/resources/evidence_cases.xml
+/resources/TNM_engl.xdsl
+/resources/evidence_cases_original.xml

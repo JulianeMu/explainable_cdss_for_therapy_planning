@@ -19,7 +19,7 @@ function show_tooltip(node_state, current_prob, last_prob, element, change_opaci
 
     let node_label_text = tooltip.select('svg').append('text')
         .attr('alignment-baseline', 'central')
-        .text(node_state)
+        .text(lookup_table_get_name_by_id(node_state))
         .attr('text-anchor', 'start')
         .attr('transform', 'translate('+ tooltip_padding+ ',' + (15)  + ')')
         .style('fill', style.getPropertyValue('--main-font-color'))

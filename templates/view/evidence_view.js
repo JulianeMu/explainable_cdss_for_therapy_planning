@@ -395,15 +395,16 @@ function add_bar_chart_line(current_evidence, evidences_plot, i) {
         .attr('id', 'node_name_text')
         .attr('font-size', font_size_bar + 'px')
         .attr('alignment-baseline', 'central')
-        .text(split_text_to_fill_the_width(current_evidence.node_label, font_size_bar, text_ending_node))
+        .text(split_text_to_fill_the_width(lookup_table_get_name_by_id(current_evidence.node_label), font_size_bar, text_ending_node))
         .attr('transform', 'translate(10,' + evidence_height / 2 + ')')
         .style('fill', style.getPropertyValue('--main-font-color'))
         .on('mousemove', function () {
-            show_tooltip_only_text(current_evidence.node_label + ": " + current_evidence.states[0].filter(x => parseFloat(x.probability) === 1)[0].name);
+            show_tooltip_only_text(lookup_table_get_name_by_id(current_evidence.node_label) + ": " + current_evidence.states[0].filter(x => parseFloat(x.probability) === 1)[0].name);
         })
         .on('mouseout', function () {
             hide_tool_tip();
         });
+
 
     node_line_svg.append('text')
         .attr('id', 'node_state_text')
@@ -415,7 +416,7 @@ function add_bar_chart_line(current_evidence, evidences_plot, i) {
         .attr('transform', 'translate(' + (min_x - min_width_state + 7) + ',' + evidence_height / 2 + ')')
         .style('fill', style.getPropertyValue('--navbar-highlight-font-color'))
         .on('mousemove', function () {
-            show_tooltip_only_text(current_evidence.node_label + ": " + current_evidence.states[0].filter(x => parseFloat(x.probability) === 1)[0].name);
+            show_tooltip_only_text(lookup_table_get_name_by_id(current_evidence.node_label) + ": " + current_evidence.states[0].filter(x => parseFloat(x.probability) === 1)[0].name);
         })
         .on('mouseout', function () {
             hide_tool_tip();

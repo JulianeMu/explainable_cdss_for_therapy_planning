@@ -25,7 +25,7 @@ function show_tooltip_max_state_change(current_evidence) {
         .duration(duration_tooltip)
         .style("opacity", 1);
     tooltip_div
-        .style("left", (d3.event.pageX) + 20 + "px")
+        .style("left", (d3.event.pageX) + 5 + "px")
         .style("top", (d3.event.pageY) + "px");
 
     tooltip_div
@@ -220,7 +220,7 @@ function show_tooltip_only_text(text) {
         .duration(duration_tooltip)
         .style("opacity", 1);
     tooltip_div
-        .style("left", (d3.event.pageX) + 20 + "px")
+        .style("left", (d3.event.pageX) + 5 + "px")
         .style("top", (d3.event.pageY) + "px");
 
     tooltip_div
@@ -237,7 +237,7 @@ function show_tooltip_only_text(text) {
     var text_max_state_before = tooltip_div.select('svg').append('text')
         .attr('font-size', font_size_bar - 4 + 'px')
         .attr('alignment-baseline', 'central')
-        .text(text)
+        .text(lookup_table_get_name_by_id(text))
         .attr('text-anchor', 'start')
         .style("font-size", 16)
         .attr('transform', 'translate(' + tooltip_padding + ',' + (15) + ')')
@@ -276,7 +276,7 @@ function show_tool_tip_pie(current_node) {
         .style("opacity", 1);
     tooltip_div
         .style("left", (d3.event.pageX) + 20 + "px")
-        .style("top", (d3.event.pageY) + "px");
+        .style("top", (d3.event.pageY - 10) + "px");
 
     tooltip_div.style('width', 350 + 'px')
         .style('height', 260 + 'px');
@@ -304,13 +304,12 @@ function show_tool_tip_pie(current_node) {
     let max_y_size = 0;
     let max_x_size = 0;
 
-    console.log(current_node)
     tooltip_div.select('svg').append('text')
         .attr('text-anchor', 'start')
         .attr('transform', 'translate(' + padding_left + ', ' + padding_top + ')')
         .style('font-weight', 800)
         .style("font-size", 16)
-        .text(current_node.node_label)
+        .text(lookup_table_get_name_by_id(current_node.node_label))
         .style('fill', style.getPropertyValue('--main-font-color'))
         .style('font-weight', style.getPropertyValue("--highlight-font-weight"));
 
@@ -334,7 +333,7 @@ function show_tool_tip_pie(current_node) {
             add_padding_between = padding_between + padding_left
 
             if (index === 1) {
-                add_padding_between = padding_between + padding_left + 100;
+                add_padding_between = padding_between + padding_left + 170;
             }
 
             tooltip_div.select('svg').append('text')
@@ -374,7 +373,7 @@ function show_tool_tip_pie(current_node) {
                 .range(color_range);
 
             tooltip_div.select('svg').append('rect')
-                .style('width', 10)
+                .style('width', 100 * current_node.states[index][states_index].probability)
                 .style('height', 10)
                 .style('fill', color(states_index))
                 .attr('transform', 'translate(' + (add_padding_between + 10) + ', ' + ((states_index+1) * 25 + padding_top - 10) + ')');
@@ -389,18 +388,18 @@ function show_tool_tip_pie(current_node) {
         }
     }
 
-    tooltip_div.style('width', (max_x_size + padding_left) + 'px')
+    tooltip_div.style('width', (max_x_size + padding_left + 100) + 'px')
         .style('height', (max_y_size + padding_top-10) + 'px');
 
     tooltip_div.select('svg')
-        .style('width', (max_x_size + padding_left))
+        .style('width', (max_x_size + padding_left + 100))
         .style('height', max_y_size + padding_top -10);
 
     tooltip_div
-        .style("top", (d3.event.pageY) - parseFloat(tooltip_div.style('height')) - 20 + "px");
+        .style("top", (d3.event.pageY) - parseFloat(tooltip_div.style('height')) - 60 + "px");
 
-    if (parseFloat(tooltip_div.style('left')) + parseFloat(tooltip_div.style('width')) > document.body.clientWidth - 5) {
-        tooltip_div.style('left', document.body.clientWidth - parseFloat(tooltip_div.style('width')) - 5 + 'px');
+    if (parseFloat(tooltip_div.style('left')) + parseFloat(tooltip_div.style('width')) > document.body.clientWidth - 15) {
+        tooltip_div.style('left', document.body.clientWidth - parseFloat(tooltip_div.style('width')) - 15 + 'px');
     }
 }
 

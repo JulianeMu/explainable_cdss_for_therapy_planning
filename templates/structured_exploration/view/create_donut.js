@@ -117,7 +117,7 @@ function create_donut(current_node, dataset, type, div_chart, boolean_create_cli
         .attr('y', '0.3em')
         .attr('font-weight', 700)
         .text(function (d) {
-            return current_node.name;
+            return lookup_table_get_name_by_id(current_node.name);
         })
         .attr('transform', function (d) {
             var x_padding = 0;
@@ -188,7 +188,7 @@ function create_donut(current_node, dataset, type, div_chart, boolean_create_cli
                     .attr('y', '-0.3em')
                     .attr('font-weight', 400)
                     .text(function (d) {
-                        return result[0].name
+                        return lookup_table_get_name_by_id(result[0].name)
                     })
                     .attr('transform', 'translate(' + (min_div_height_width / 2) +
                         ',' + (min_div_height_width / 2) + ')');
@@ -270,7 +270,7 @@ function create_donut(current_node, dataset, type, div_chart, boolean_create_cli
                     return color(dataset_current.indexOf(d.data));
                 }
             })
-            .attr("opacity", 0.8)
+            .attr("opacity", 0.9)
             .attr('transform', 'translate(' + (min_div_height_width / 2) +
                 ',' + (min_div_height_width / 2) + ')');
 
@@ -321,7 +321,7 @@ function create_donut(current_node, dataset, type, div_chart, boolean_create_cli
             for (let i=0; i< 2; i++) {
                 let id_splitted = d3.select(this).attr('id').split(splitter + state_label );
                 let current_id = id_splitted[0].slice(0, -1) + i + splitter + state_label  + id_splitted[1];
-                d3.select('#' + current_id).attr('opacity', 0.8).style('stroke', 'none');
+                d3.select('#' + current_id).attr('opacity', 0.9).style('stroke', 'none');
             }
             hide_tooltip(this, true);
         });

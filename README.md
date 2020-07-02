@@ -21,6 +21,11 @@ To run the application you need to do following steps:
 - [ ] run the **index.html** (located in the templates folder). To avoid CORS erros, you have to either use your preferred development environment to run the *index.html* or navigate inside the templates folder in your terminal and run `python -m SimpleHTTPServer`
 - [ ] have fun using our visual approach :) 
 
+# Publications
+This work won the best poster award at Visual Computing in Biology and Medicine (VCBM) 2019 and has been published at: 
+
+Müller J, Stoehr M, Oeser A, Gaebel J, Streit M, Dietz A, et al. A visual approach to explainable computerized clinical decision support. Computers & Graphics. 2020; doi: https://doi.org/10.1016/j.cag.2020.06.004
+
 # Acknowledgements
 The research leading to this work was supported by the German Federal Ministry of Education and Research (BMBF) (03Z1LN11) and the Federal State of Saxony-Anhalt (FKZ: I 88). We use the python wrapper from GeNIe SMILE to run the reasoning process. The BN provided as an example was developed by Reijnen et al.[1].
 
